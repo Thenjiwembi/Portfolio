@@ -30,6 +30,7 @@ import {
 import { FormEvent, useState } from "react";
 import { toast } from "sonner";
 
+const heroImage = "/manus-storage/thenjiwe-hero-orbit_f30209bc.jpg";
 const portraitImage = "/manus-storage/thenjiwe-mbi-portrait_855f98d3.jpg";
 const govGuideImage = "/manus-storage/govguide-ai-visual_9b2bc022.jpg";
 const mobilityImage = "/manus-storage/mobility-booking-visual_e8a487a0.jpg";
@@ -82,7 +83,8 @@ function SectionHeading({
     <motion.div {...fadeUp} className="mb-10 grid gap-4 md:mb-14 md:grid-cols-[10rem_1fr] md:gap-10">
       <div className="flex items-center gap-3 self-start pt-2">
         <span className="font-mono text-xs font-bold tracking-[0.18em] text-[#315CF4]">{number}</span>
-        <span className="h-px w-10 bg-[#315CF4]/45" />
+        <span className="section-orbit" aria-hidden="true" />
+        <span className="h-px w-7 bg-[#315CF4]/45" />
       </div>
       <div>
         <p className="mb-3 text-[10px] font-extrabold uppercase tracking-[0.2em] text-muted-foreground">
@@ -250,12 +252,12 @@ export default function Home() {
               className="relative mx-auto w-full max-w-xl lg:max-w-none"
             >
               <div className="relative overflow-hidden border border-foreground/[0.09] bg-card p-2 shadow-[24px_24px_0_rgba(49,92,244,0.09)] dark:border-white/[0.11] dark:shadow-[24px_24px_0_rgba(49,92,244,0.14)] sm:p-3">
-                <img src={portraitImage} alt="Thenjiwe Mbi" className="aspect-[4/3] w-full object-cover object-[center_28%]" />
-                <div className="absolute inset-2 bg-gradient-to-t from-[#0c1732]/45 via-transparent to-transparent sm:inset-3" />
+                <img src={heroImage} alt="Abstract cobalt orbital system" className="aspect-[4/3] w-full object-cover object-center" />
+                <div className="absolute inset-2 bg-gradient-to-t from-[#0c1732]/25 via-transparent to-transparent sm:inset-3" />
                 <div className="absolute inset-2 border border-white/35 sm:inset-3" />
                 <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-[#0c1732]/82 px-3 py-2 text-[9px] font-bold uppercase tracking-[0.17em] text-white backdrop-blur sm:bottom-6 sm:left-6">
                   <Sparkles size={12} className="text-[#7e9bff]" />
-                  Developer / Cape Town
+                  Intelligent systems
                 </div>
                 <div className="absolute right-5 top-5 bg-background/75 px-2 py-1 font-mono text-[10px] font-bold tracking-[0.14em] text-[#315CF4] backdrop-blur sm:right-6 sm:top-6">TM // 2026</div>
                 <div aria-hidden="true" className="orbital-stamp absolute bottom-5 right-5 size-16 sm:bottom-6 sm:right-6 sm:size-18">
@@ -296,14 +298,21 @@ export default function Home() {
                   My foundation in <strong className="font-bold text-foreground">ICT Application Development at Cape Peninsula University of Technology</strong> gave me a practical lens for software design, data, and problem-solving. At <strong className="font-bold text-foreground">Code7Solutions</strong>, I developed that foundation in a professional environment—contributing to web work where quality, usability, and reliable delivery all matter.
                 </p>
               </motion.div>
-              <motion.aside {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.08 }} className="mineral-panel relative p-6 sm:p-7">
-                <div className="absolute right-5 top-5 font-mono text-[10px] font-bold text-[#315CF4]">/ PROFILE</div>
-                <FileText size={24} strokeWidth={1.55} className="mb-12 text-[#315CF4]" />
-                <p className="text-xs font-bold uppercase tracking-[0.15em] text-muted-foreground">Working principle</p>
-                <p className="mt-3 text-lg font-bold leading-7 tracking-[-0.025em] text-foreground">Build the system. Keep the human at the center.</p>
-                <div className="mt-7 h-px w-full bg-foreground/[0.1]" />
-                <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Curious · detail-aware · delivery-minded</p>
-              </motion.aside>
+              <div className="space-y-5">
+                <motion.figure {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.06 }} className="portrait-note relative ml-auto w-full max-w-[17rem] overflow-hidden border border-foreground/[0.1] bg-card p-2 shadow-[12px_12px_0_rgba(49,92,244,0.1)]">
+                  <img src={portraitImage} alt="Thenjiwe Mbi" className="aspect-[5/4] w-full object-cover object-[center_24%]" />
+                  <div className="absolute inset-2 border border-white/30" />
+                  <figcaption className="absolute bottom-5 left-5 bg-[#0c1732]/84 px-3 py-2 font-mono text-[8px] font-bold uppercase tracking-[0.16em] text-white backdrop-blur">Thenjiwe Mbi / 01</figcaption>
+                </motion.figure>
+                <motion.aside {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.12 }} className="mineral-panel relative p-6 sm:p-7">
+                  <div className="absolute right-5 top-5 font-mono text-[10px] font-bold text-[#315CF4]">/ PROFILE</div>
+                  <FileText size={24} strokeWidth={1.55} className="mb-12 text-[#315CF4]" />
+                  <p className="text-xs font-bold uppercase tracking-[0.15em] text-muted-foreground">Working principle</p>
+                  <p className="mt-3 text-lg font-bold leading-7 tracking-[-0.025em] text-foreground">Build the system. Keep the human at the center.</p>
+                  <div className="mt-7 h-px w-full bg-foreground/[0.1]" />
+                  <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Curious · detail-aware · delivery-minded</p>
+                </motion.aside>
+              </div>
             </div>
           </div>
         </section>
@@ -364,8 +373,8 @@ export default function Home() {
                   <img src={govGuideImage} alt="Abstract visual representing GOVGUIDE AI conversational civic support" className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.025]" />
                   <div className="absolute inset-3 border border-white/15" />
                   <span className="absolute left-6 top-6 bg-[#0c1732]/85 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white backdrop-blur">01 / AI service</span>
-                  <div className="absolute bottom-6 right-6 flex items-center gap-1.5 bg-[#0c1732]/82 px-3 py-2 font-mono text-[8px] font-bold tracking-[0.12em] text-white backdrop-blur">
-                    <span>LLM</span><span className="h-px w-4 bg-[#7e9bff]" /><span>AUTH</span><span className="h-px w-4 bg-[#7e9bff]" /><span>ARCHIVE</span>
+                  <div className="absolute bottom-6 right-6 flex items-center gap-1.5 bg-[#0c1732]/86 px-3 py-2 font-mono text-[8px] font-bold tracking-[0.12em] text-white backdrop-blur">
+                    <span>QUESTION</span><span className="h-px w-4 bg-[#7e9bff]" /><span>GUIDE</span><span className="h-px w-4 bg-[#7e9bff]" /><span>RECORD</span>
                   </div>
                 </div>
                 <div className="p-6 sm:p-7">
@@ -391,8 +400,8 @@ export default function Home() {
                   <img src={mobilityImage} alt="Abstract visual representing hospitality vehicle booking" className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-[1.025]" />
                   <div className="absolute inset-3 border border-white/25" />
                   <span className="absolute left-6 top-6 bg-[#315CF4]/92 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white backdrop-blur">02 / Commerce</span>
-                  <div className="absolute bottom-6 right-6 flex items-center gap-1.5 bg-[#0c1732]/82 px-3 py-2 font-mono text-[8px] font-bold tracking-[0.12em] text-white backdrop-blur">
-                    <span>SELECT</span><span className="h-px w-4 bg-[#7e9bff]" /><span>CUSTOMIZE</span><span className="h-px w-4 bg-[#7e9bff]" /><span>PAY</span>
+                  <div className="absolute bottom-6 right-6 flex items-center gap-1.5 bg-[#0c1732]/86 px-3 py-2 font-mono text-[8px] font-bold tracking-[0.12em] text-white backdrop-blur">
+                    <span>SELECT</span><span className="h-px w-4 bg-[#7e9bff]" /><span>TAILOR</span><span className="h-px w-4 bg-[#7e9bff]" /><span>PAY</span>
                   </div>
                 </div>
                 <div className="p-6 sm:p-7">
