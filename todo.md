@@ -1,5 +1,6 @@
 # Portfolio refinement tasks
 
+- [x] Restyle the portfolio around the supplied dark, compact developer-portfolio reference.
 - [x] Move the compact portrait to the right side of the landing-page hero and remove it from Little Context.
 - [x] Move the portrait from the hero to a smaller, right-aligned placement in the Little Context section.
 - [x] Receive Thenjiwe Mbi’s preferred portrait image and prepare it for the website.

@@ -1,78 +1,29 @@
-# Thenjiwe Mbi Portfolio — Design Direction
+# Thenjiwe Mbi Portfolio — Reference-led Design Specification
 
-## Three Possible Approaches
+## Ground-Truth Reference
 
-### 1. **Circuit Editorial**
-**Very Brief Intro:** An editorial portfolio with a warm technical character: generous cream surfaces, sharp ink typography, and a tactile cobalt interface language. It feels considered and human rather than like a generic software landing page.
+The supplied reference image is the design target for this revision. The portfolio must echo its **compact dark developer profile** composition: blue-black page surface, slim top navigation, a warm red-orange portrait halo, tight typography hierarchy, fine linework, and a vertically connected, single-page rhythm. Fidelity to these structural and visual cues takes precedence over the previous Circuit Editorial direction.
 
-**Probability:** 0.07
+## Translation for Thenjiwe Mbi
 
-### 2. **Night Shift Terminal**
-**Very Brief Intro:** A near-black developer notebook accented by electric cyan diagnostics and code-like rhythm. It presents the work as a focused command center after dark.
+### Layout
+The desktop landing page uses a two-part hero: left-aligned greeting and identity copy; right-aligned portrait framed in a deep red/orange circular halo. The page remains one continuous, dark, scrollable portfolio, using compact vertical spacing and thin connecting rules. The About section begins with an icon-led capability rail inspired by the reference’s left-side service list, while retaining Thenjiwe’s real background information.
 
-**Probability:** 0.03
+### Color and Materials
+The foundation is near-black blue (#09161E) with slightly lighter navy panels (#10232D). The single energetic accent is ember orange (#FF6247), used for the portrait halo, primary action, active markers, and key statistics. Soft blue-grey type replaces bright white for secondary content. Panels use low-contrast borders and soft ambient shadows rather than frosted glass.
 
-### 3. **Cape Current**
-**Very Brief Intro:** A quiet coastal palette and airy asymmetry translate Cape Town’s light and motion into a confident personal brand. Technical credibility is expressed through precise layout rather than overt software clichés.
+### Typography
+The design pairs a direct contemporary sans serif for labels and body copy with a larger, expressive serif identity treatment. Type is compact, left-aligned, and deliberately weighted: greeting first, name second, role as the largest decisive statement.
 
-**Probability:** 0.09
+### Portrait Treatment
+Thenjiwe’s supplied photo appears **on the landing page**, to the right of the hero copy, in front of a large ember-orange halo. It is contained, cleanly cropped, and responsive; it does not appear again in the Little Context section.
 
----
-
-## Chosen Approach: Circuit Editorial
-
-### Design Movement
-**Neo-editorial technical minimalism**—inspired by independent magazines and high-quality engineering journals, blended with restrained glass-like interface materials.
-
-### Core Principles
-1. **Structured, not sterile:** rigid typographic rhythm is softened by floating translucent panels and layered shapes.
-2. **Human-centered technology:** editorial whitespace and direct language foreground user outcomes rather than visual spectacle.
-3. **Cobalt as a signal:** a single saturated technical blue creates direction, focus, and a strong personal signature.
-4. **Purposeful contrast:** confident display headlines sit against calm parchment backgrounds, while dark mode becomes a focused ink-and-electric-blue workspace.
-
-### Color Philosophy
-The default light experience uses parchment-white with inky navy text to feel thoughtful, established, and welcoming. **Signal Cobalt (#315CF4)** punctuates interactive moments, project labels, and key data. In dark mode, deep blue-black replaces the parchment while electric cobalt and pale mineral white retain an intelligent, composed atmosphere rather than a neon aesthetic.
-
-### Layout Paradigm
-A vertical **editorial ledger** rather than a centered marketing stack: each section starts from a visible left-hand index rail on larger screens, and content shifts in deliberate offsets. Tall ruled columns, oversized numeral markers, and staggered project cards drive a sense of progressive reading.
-
-### Signature Elements
-1. A cobalt **signal orb**—a soft layered sphere with orbit lines—marks the hero and becomes a recurring abstract motif.
-2. Fine **technical rules and coordinates** frame section labels and cards.
-3. Translucent **mineral-glass tiles** carry skills and project metadata with subtle internal highlights.
-
-### Interaction Philosophy
-The interface should feel calm and responsive: hover states lift only a few pixels, timeline rules brighten to confirm direction, and navigation scrolls with clarity. Interactions are legible feedback, never decoration.
-
-### Animation
-Entrance motion uses short 220–320 ms opacity-and-translate reveals with a slight stagger for grouped content. The signal orb has a barely perceptible 10-second drift and its orbit rotates only when reduced motion is not requested. Buttons compress to 0.97 scale on press; all scroll and hover motion respects `prefers-reduced-motion`.
-
-### Typography System
-**DM Serif Display** is used only for large, high-contrast statements and italic emphasis. **Manrope** handles body, navigation, labels, and UI in compact, readable weights. Headlines use tight tracking and intentional line breaks; overline labels use uppercase Manrope with generous letterspacing.
-
-### Brand Essence
-**A software developer and AI specialist building clear, intelligent digital tools that make complex services easier to use.**
-
-Personality: **Precise, thoughtful, capable.**
+### Interaction
+The orange action button is the clear primary route. Subtle hover lifts, rule highlights, and a calm mobile menu provide feedback. Animations stay short and use only opacity and transforms, respecting reduced-motion preferences.
 
 ### Brand Voice
-The voice is direct, observant, and outcome-led. Headlines are declarative; CTAs invite a specific next step; microcopy clarifies what follows without hype.
+Tone is concise, assured, and useful. It emphasizes approachable problem-solving and practical software work.
 
-> “Interfaces for the questions people actually ask.”
+> “I build accessible web applications that make complex tasks easier to understand and use.”
 
-> “Explore selected systems →”
-
-### Wordmark & Logo
-The logo is a bold, text-free **offset orbital monogram**: two interlocking cobalt arcs form a compact `T/M` suggestion around a negative-space center. It should read as a signal, a conversation loop, and a structured system at once.
-
-### Signature Brand Color
-**Signal Cobalt — #315CF4**
-
-## Style Decisions
-
-- The editorial ledger remains visible in every major section through a persistent index rail, ruled metadata, offset content alignment, and a staggered reading rhythm—not default centered or equal-card layouts.
-- Project visual treatments combine cobalt/mineral abstraction with concrete system evidence, including workflow paths, service states, and annotated outcomes.
-- Signal Cobalt #315CF4 functions as a disciplined signal color for primary actions, section coordinates, project labels, and key markers; secondary interface details recede into ink, parchment, and pale mineral tones.
-- The offset orbital monogram returns as a concise recurring signal in hero media, section markers, and project-system annotations.
-- Project presentation privileges real workflow evidence and decisions—question to response, selection to payment—over decorative technology imagery.
-- Outcome-led language names the people and processes each system helps, rather than relying on broad portfolio phrasing.
+> “Let’s make something useful.”

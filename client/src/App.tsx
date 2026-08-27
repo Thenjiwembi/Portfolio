@@ -1,6 +1,6 @@
 /**
- * Circuit Editorial reminder: the global shell should feel structured, calm, and human-centered,
- * using Signal Cobalt as a focused interaction accent rather than decorative noise.
+ * Reference-led reminder: start in the compact blue-black portfolio mode, with ember orange
+ * reserved for the portrait halo, major actions, and small structural markers.
  */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -20,10 +20,10 @@ function Router() {
   );
 }
 
-function App() {
+export default function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light" switchable>
+      <ThemeProvider defaultTheme="dark" switchable>
         <TooltipProvider>
           <Toaster richColors position="bottom-right" />
           <Router />
@@ -32,5 +32,3 @@ function App() {
     </ErrorBoundary>
   );
 }
-
-export default App;
