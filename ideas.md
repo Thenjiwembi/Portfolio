@@ -73,3 +73,6 @@ The logo is a bold, text-free **offset orbital monogram**: two interlocking coba
 - The editorial ledger remains visible in every major section through a persistent index rail, ruled metadata, offset content alignment, and a staggered reading rhythm—not default centered or equal-card layouts.
 - Project visual treatments combine cobalt/mineral abstraction with concrete system evidence, including workflow paths, service states, and annotated outcomes.
 - Signal Cobalt #315CF4 functions as a disciplined signal color for primary actions, section coordinates, project labels, and key markers; secondary interface details recede into ink, parchment, and pale mineral tones.
+- The offset orbital monogram returns as a concise recurring signal in hero media, section markers, and project-system annotations.
+- Project presentation privileges real workflow evidence and decisions—question to response, selection to payment—over decorative technology imagery.
+- Outcome-led language names the people and processes each system helps, rather than relying on broad portfolio phrasing.

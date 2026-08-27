@@ -170,6 +170,49 @@
   .contact-label, .contact-value { display: block; }
   .contact-label { color: var(--muted-foreground); font-size: 0.62rem; font-weight: 800; letter-spacing: 0.14em; line-height: 1.2; text-transform: uppercase; }
   .contact-value { margin-top: 0.32rem; color: var(--foreground); font-size: 0.82rem; font-weight: 700; letter-spacing: -0.02em; }
+
+  .system-path {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    overflow-x: auto;
+    padding-bottom: 0.1rem;
+    color: var(--muted-foreground);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.57rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .system-path svg { flex: 0 0 auto; color: #315CF4; }
+
+  .orbital-stamp { display: grid; place-items: center; }
+  .orbital-stamp__ring {
+    position: absolute;
+    inset: 7%;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(12, 23, 50, 0.18);
+  }
+  .orbital-stamp__ring--one { transform: rotate(24deg) scaleX(1.08); }
+  .orbital-stamp__ring--two { transform: rotate(-53deg) scaleX(0.62); }
+  .orbital-stamp__core { width: 0.58rem; height: 0.58rem; border-radius: 50%; background: #315CF4; box-shadow: 0 0 0 3px rgba(255,255,255,0.75), 0 0 16px rgba(49,92,244,0.75); }
+
+  .social-icon {
+    display: grid;
+    width: 2.35rem;
+    height: 2.35rem;
+    place-items: center;
+    border: 1px solid color-mix(in oklab, var(--foreground) 12%, transparent);
+    background: color-mix(in oklab, var(--card) 72%, transparent);
+    color: var(--foreground);
+    transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms cubic-bezier(0.23, 1, 0.32, 1), color 160ms cubic-bezier(0.23, 1, 0.32, 1), border-color 160ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .social-icon:hover { transform: translateY(-2px); border-color: #315CF4; background: #315CF4; color: white; }
+  .social-icon:active { transform: scale(0.97); }
 }
 
 @media (min-width: 768px) {

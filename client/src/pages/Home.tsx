@@ -30,7 +30,7 @@ import {
 import { FormEvent, useState } from "react";
 import { toast } from "sonner";
 
-const heroImage = "/manus-storage/thenjiwe-hero-orbit_f30209bc.jpg";
+const portraitImage = "/manus-storage/thenjiwe-mbi-portrait_855f98d3.jpg";
 const govGuideImage = "/manus-storage/govguide-ai-visual_9b2bc022.jpg";
 const mobilityImage = "/manus-storage/mobility-booking-visual_e8a487a0.jpg";
 const signalMark = "/manus-storage/thenjiwe-signal-mark_1e1e740e.png";
@@ -136,7 +136,7 @@ export default function Home() {
               </span>
               <span className="leading-none">
                 <span className="block text-[14px] font-extrabold tracking-[-0.045em]">THENJIWE <span className="text-[#315CF4]">MBI</span></span>
-                <span className="mt-1 block text-[8px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Studio / Developer / AI</span>
+                <span className="mt-1 block text-[8px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Developer / Builder</span>
               </span>
             </button>
 
@@ -212,16 +212,16 @@ export default function Home() {
                 </p>
               </div>
               <p className="mb-4 max-w-xl font-display text-2xl italic tracking-[-0.025em] text-[#315CF4] sm:text-3xl">
-                Building with intent.
+                For the questions people actually ask.
               </p>
               <h1 className="max-w-3xl font-display text-[clamp(4rem,10vw,8.5rem)] leading-[0.78] tracking-[-0.078em] text-foreground">
                 Thenjiwe<br />
                 <span className="relative ml-[0.28em] inline-block">Mbi<span className="absolute -right-4 top-0 font-mono text-sm font-bold tracking-normal text-[#315CF4] sm:-right-6 sm:text-base">01</span></span>
               </h1>
               <div className="mt-10 max-w-xl border-l-2 border-[#315CF4] pl-5 sm:pl-6">
-                <h2 className="text-xl font-extrabold tracking-[-0.035em] text-foreground sm:text-2xl">Software Developer & AI Specialist</h2>
+                <h2 className="text-xl font-extrabold tracking-[-0.035em] text-foreground sm:text-2xl">Software Developer creating clear systems for real people.</h2>
                 <p className="mt-3 text-base leading-7 text-muted-foreground">
-                  Building intelligent, user-centric web applications with modern frameworks and robust data architectures.
+                  I build accessible web applications that make complex tasks easier to understand and use.
                 </p>
               </div>
               <div className="mt-9 flex flex-wrap gap-3">
@@ -250,13 +250,19 @@ export default function Home() {
               className="relative mx-auto w-full max-w-xl lg:max-w-none"
             >
               <div className="relative overflow-hidden border border-foreground/[0.09] bg-card p-2 shadow-[24px_24px_0_rgba(49,92,244,0.09)] dark:border-white/[0.11] dark:shadow-[24px_24px_0_rgba(49,92,244,0.14)] sm:p-3">
-                <img src={heroImage} alt="Abstract cobalt orbital system" className="aspect-[4/3] w-full object-cover object-center" />
-                <div className="absolute inset-2 border border-white/25 sm:inset-3" />
+                <img src={portraitImage} alt="Thenjiwe Mbi" className="aspect-[4/3] w-full object-cover object-[center_28%]" />
+                <div className="absolute inset-2 bg-gradient-to-t from-[#0c1732]/45 via-transparent to-transparent sm:inset-3" />
+                <div className="absolute inset-2 border border-white/35 sm:inset-3" />
                 <div className="absolute bottom-5 left-5 flex items-center gap-2 bg-[#0c1732]/82 px-3 py-2 text-[9px] font-bold uppercase tracking-[0.17em] text-white backdrop-blur sm:bottom-6 sm:left-6">
                   <Sparkles size={12} className="text-[#7e9bff]" />
-                  Intelligent systems
+                  Developer / Cape Town
                 </div>
-                <div className="absolute right-5 top-5 font-mono text-[10px] font-bold tracking-[0.14em] text-[#315CF4] sm:right-6 sm:top-6">TM // 2026</div>
+                <div className="absolute right-5 top-5 bg-background/75 px-2 py-1 font-mono text-[10px] font-bold tracking-[0.14em] text-[#315CF4] backdrop-blur sm:right-6 sm:top-6">TM // 2026</div>
+                <div aria-hidden="true" className="orbital-stamp absolute bottom-5 right-5 size-16 sm:bottom-6 sm:right-6 sm:size-18">
+                  <span className="orbital-stamp__ring orbital-stamp__ring--one" />
+                  <span className="orbital-stamp__ring orbital-stamp__ring--two" />
+                  <span className="orbital-stamp__core" />
+                </div>
               </div>
               <div className="absolute -bottom-7 -left-5 hidden border border-foreground/[0.1] bg-background/85 px-4 py-3 backdrop-blur-xl sm:flex sm:items-center sm:gap-4">
                 <span className="font-display text-3xl leading-none text-[#315CF4]">↗</span>
@@ -284,7 +290,7 @@ export default function Home() {
               <div className="hidden md:block" />
               <motion.div {...fadeUp} className="max-w-2xl">
                 <p className="font-display text-3xl leading-[1.08] tracking-[-0.04em] text-foreground sm:text-4xl">
-                  I turn complex requirements into <em className="text-[#315CF4]">clear, useful</em> digital experiences.
+                  I build interfaces for the <em className="text-[#315CF4]">questions people actually ask.</em>
                 </p>
                 <p className="mt-7 text-base leading-8 text-muted-foreground">
                   My foundation in <strong className="font-bold text-foreground">ICT Application Development at Cape Peninsula University of Technology</strong> gave me a practical lens for software design, data, and problem-solving. At <strong className="font-bold text-foreground">Code7Solutions</strong>, I developed that foundation in a professional environment—contributing to web work where quality, usability, and reliable delivery all matter.
@@ -350,7 +356,7 @@ export default function Home() {
               number="03"
               eyebrow="Selected work"
               title="Systems that make a difference."
-              intro="Two project snapshots where product thinking, interface craft, and technical structure work together."
+              intro="Two systems designed around real decisions: navigating a public-service question and arranging reliable guest mobility."
             />
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
               <motion.article {...fadeUp} className="mineral-panel group overflow-hidden">
@@ -370,6 +376,9 @@ export default function Home() {
                   <p className="mt-5 text-sm leading-7 text-muted-foreground">An AI-powered public-service assistant that helps citizens understand government procedures and requirements through conversational interaction.</p>
                   <div className="mt-6 border-l-2 border-[#315CF4] bg-[#315CF4]/[0.05] px-4 py-3">
                     <p className="text-[11px] font-bold leading-5 text-foreground">Structured LLM prompts, token tracking, Supabase auth, conversation archiving, and accessible UX.</p>
+                  </div>
+                  <div className="system-path mt-5" aria-label="GOVGUIDE AI system path">
+                    <span>Citizen question</span><ArrowDownRight size={13} /><span>Guided response</span><ArrowDownRight size={13} /><span>Saved context</span>
                   </div>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {["React", "TypeScript", "Tailwind CSS", "Supabase", "LLM Integration"].map(tag => <span key={tag} className="project-tag">{tag}</span>)}
@@ -394,6 +403,9 @@ export default function Home() {
                   <p className="mt-5 text-sm leading-7 text-muted-foreground">An in-hotel booking platform allowing hotel guests to choose, customize vehicle type, duration, and color, then pay for rental vehicles directly.</p>
                   <div className="mt-6 border-l-2 border-[#315CF4] bg-[#315CF4]/[0.05] px-4 py-3">
                     <p className="text-[11px] font-bold leading-5 text-foreground">A guest-focused booking flow designed to make mobility choices simple, tailored, and ready to transact.</p>
+                  </div>
+                  <div className="system-path mt-5" aria-label="Hospitality car rental system path">
+                    <span>Guest selects</span><ArrowDownRight size={13} /><span>Vehicle tailored</span><ArrowDownRight size={13} /><span>Payment ready</span>
                   </div>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {["JavaScript", "React", "Node.js", "CSS3", "HTML5"].map(tag => <span key={tag} className="project-tag">{tag}</span>)}
@@ -429,16 +441,13 @@ export default function Home() {
                   <span><span className="contact-label">Location</span><span className="contact-value">Cape Town, South Africa</span></span>
                   <ArrowUpRight size={16} className="ml-auto text-muted-foreground transition-colors group-hover:text-[#315CF4]" />
                 </a>
-                <a href="https://github.com/thenjiwembi" target="_blank" rel="noreferrer" className="contact-link group">
-                  <span className="contact-icon"><Github size={18} /></span>
-                  <span><span className="contact-label">GitHub</span><span className="contact-value">github.com/thenjiwembi</span></span>
-                  <ArrowUpRight size={16} className="ml-auto text-muted-foreground transition-colors group-hover:text-[#315CF4]" />
-                </a>
-                <a href="https://za.linkedin.com/in/thenjiwe-mbi" target="_blank" rel="noreferrer" className="contact-link group">
-                  <span className="contact-icon"><Linkedin size={18} /></span>
-                  <span><span className="contact-label">LinkedIn</span><span className="contact-value">Thenjiwe Mbi</span></span>
-                  <ArrowUpRight size={16} className="ml-auto text-muted-foreground transition-colors group-hover:text-[#315CF4]" />
-                </a>
+                <div className="flex items-center justify-between border-t border-foreground/[0.1] pt-5">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground">Find me online</span>
+                  <div className="flex items-center gap-2">
+                    <a href="https://github.com/thenjiwembi" target="_blank" rel="noreferrer" aria-label="Visit Thenjiwe’s GitHub profile" title="GitHub" className="social-icon"><Github size={17} /></a>
+                    <a href="https://za.linkedin.com/in/thenjiwe-mbi" target="_blank" rel="noreferrer" aria-label="Visit Thenjiwe’s LinkedIn profile" title="LinkedIn" className="social-icon"><Linkedin size={17} /></a>
+                  </div>
+                </div>
               </motion.div>
 
               <motion.form {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.08 }} onSubmit={handleContact} className="mineral-panel relative p-6 backdrop-blur-sm sm:p-8">
@@ -447,20 +456,20 @@ export default function Home() {
                 <div className="grid gap-5 sm:grid-cols-2">
                   <label className="block text-[10px] font-extrabold uppercase tracking-[0.16em] text-muted-foreground">
                     Name
-                    <Input value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder="Your name" className="mt-2 h-12 rounded-none border-foreground/12 bg-background/65 text-sm shadow-none placeholder:text-muted-foreground/70 focus-visible:border-[#315CF4] focus-visible:ring-[#315CF4]/20" />
+                    <Input required value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder="Your name" className="mt-2 h-12 rounded-none border-foreground/12 bg-background/65 text-sm shadow-none placeholder:text-muted-foreground/70 focus-visible:border-[#315CF4] focus-visible:ring-[#315CF4]/20" />
                   </label>
                   <label className="block text-[10px] font-extrabold uppercase tracking-[0.16em] text-muted-foreground">
                     Email
-                    <Input type="email" value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder="you@example.com" className="mt-2 h-12 rounded-none border-foreground/12 bg-background/65 text-sm shadow-none placeholder:text-muted-foreground/70 focus-visible:border-[#315CF4] focus-visible:ring-[#315CF4]/20" />
+                    <Input required type="email" value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder="you@example.com" className="mt-2 h-12 rounded-none border-foreground/12 bg-background/65 text-sm shadow-none placeholder:text-muted-foreground/70 focus-visible:border-[#315CF4] focus-visible:ring-[#315CF4]/20" />
                   </label>
                 </div>
                 <label className="mt-5 block text-[10px] font-extrabold uppercase tracking-[0.16em] text-muted-foreground">
                   Message
-                  <Textarea value={form.message} onChange={event => setForm(current => ({ ...current, message: event.target.value }))} placeholder="What are you looking to build?" className="mt-2 min-h-35 resize-y rounded-none border-foreground/12 bg-background/65 p-3 text-sm leading-6 shadow-none placeholder:text-muted-foreground/70 focus-visible:border-[#315CF4] focus-visible:ring-[#315CF4]/20" />
+                  <Textarea required value={form.message} onChange={event => setForm(current => ({ ...current, message: event.target.value }))} placeholder="What are you looking to build?" className="mt-2 min-h-35 resize-y rounded-none border-foreground/12 bg-background/65 p-3 text-sm leading-6 shadow-none placeholder:text-muted-foreground/70 focus-visible:border-[#315CF4] focus-visible:ring-[#315CF4]/20" />
                 </label>
                 <div className="mt-7 flex flex-wrap items-center justify-between gap-4">
-                  <p className="text-xs leading-5 text-muted-foreground">Submitting opens your preferred email app.</p>
-                  <Button type="submit" className="h-11 rounded-none bg-[#315CF4] px-5 text-sm font-bold text-white hover:bg-[#234ae0] active:scale-[0.97]">Send enquiry <Send size={15} /></Button>
+                  <p className="max-w-xs text-xs leading-5 text-muted-foreground">Your name, email, and message will be added to an email addressed to Thenjiwe.</p>
+                  <Button type="submit" className="h-11 rounded-none bg-[#315CF4] px-5 text-sm font-bold text-white hover:bg-[#234ae0] active:scale-[0.97]">Send via email <Send size={15} /></Button>
                 </div>
               </motion.form>
             </div>
@@ -471,7 +480,7 @@ export default function Home() {
       <footer className="border-t border-foreground/[0.08] px-5 py-7 sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Thenjiwe Mbi</p>
-          <p>Software developer & AI specialist</p>
+          <p>Software developer / thoughtful digital experiences</p>
           <button type="button" onClick={() => scrollTo("top")} className="inline-flex items-center gap-2 transition-colors hover:text-[#315CF4]">Back to top <ArrowUpRight size={13} /></button>
         </div>
       </footer>
