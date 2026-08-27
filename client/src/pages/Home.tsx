@@ -249,7 +249,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.96, x: 22 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ duration: 0.72, delay: 0.1, ease: "circOut" }}
-              className="relative mx-auto w-full max-w-xl lg:max-w-none"
+              className="relative mx-auto w-full max-w-xl pb-12 lg:max-w-none"
             >
               <div className="relative overflow-hidden border border-foreground/[0.09] bg-card p-2 shadow-[24px_24px_0_rgba(49,92,244,0.09)] dark:border-white/[0.11] dark:shadow-[24px_24px_0_rgba(49,92,244,0.14)] sm:p-3">
                 <img src={heroImage} alt="Abstract cobalt orbital system" className="aspect-[4/3] w-full object-cover object-center" />
@@ -266,6 +266,10 @@ export default function Home() {
                   <span className="orbital-stamp__core" />
                 </div>
               </div>
+              <figure className="absolute -bottom-1 right-3 z-10 w-32 overflow-hidden border border-foreground/[0.14] bg-card p-1.5 shadow-[10px_10px_0_rgba(49,92,244,0.15)] sm:-bottom-2 sm:right-5 sm:w-40 lg:-right-3 lg:w-44">
+                <img src={portraitImage} alt="Thenjiwe Mbi" className="aspect-[5/4] w-full object-cover object-[center_24%]" />
+                <figcaption className="absolute bottom-3 left-3 bg-[#0c1732]/85 px-2 py-1 font-mono text-[7px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur">Thenjiwe / 01</figcaption>
+              </figure>
               <div className="absolute -bottom-7 -left-5 hidden border border-foreground/[0.1] bg-background/85 px-4 py-3 backdrop-blur-xl sm:flex sm:items-center sm:gap-4">
                 <span className="font-display text-3xl leading-none text-[#315CF4]">↗</span>
                 <span className="text-[10px] font-bold uppercase leading-4 tracking-[0.16em] text-muted-foreground">Clarity through<br />technology</span>
@@ -298,21 +302,14 @@ export default function Home() {
                   My foundation in <strong className="font-bold text-foreground">ICT Application Development at Cape Peninsula University of Technology</strong> gave me a practical lens for software design, data, and problem-solving. At <strong className="font-bold text-foreground">Code7Solutions</strong>, I developed that foundation in a professional environment—contributing to web work where quality, usability, and reliable delivery all matter.
                 </p>
               </motion.div>
-              <div className="space-y-5">
-                <motion.figure {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.06 }} className="portrait-note relative ml-auto w-full max-w-[17rem] overflow-hidden border border-foreground/[0.1] bg-card p-2 shadow-[12px_12px_0_rgba(49,92,244,0.1)]">
-                  <img src={portraitImage} alt="Thenjiwe Mbi" className="aspect-[5/4] w-full object-cover object-[center_24%]" />
-                  <div className="absolute inset-2 border border-white/30" />
-                  <figcaption className="absolute bottom-5 left-5 bg-[#0c1732]/84 px-3 py-2 font-mono text-[8px] font-bold uppercase tracking-[0.16em] text-white backdrop-blur">Thenjiwe Mbi / 01</figcaption>
-                </motion.figure>
-                <motion.aside {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.12 }} className="mineral-panel relative p-6 sm:p-7">
-                  <div className="absolute right-5 top-5 font-mono text-[10px] font-bold text-[#315CF4]">/ PROFILE</div>
-                  <FileText size={24} strokeWidth={1.55} className="mb-12 text-[#315CF4]" />
-                  <p className="text-xs font-bold uppercase tracking-[0.15em] text-muted-foreground">Working principle</p>
-                  <p className="mt-3 text-lg font-bold leading-7 tracking-[-0.025em] text-foreground">Build the system. Keep the human at the center.</p>
-                  <div className="mt-7 h-px w-full bg-foreground/[0.1]" />
-                  <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Curious · detail-aware · delivery-minded</p>
-                </motion.aside>
-              </div>
+              <motion.aside {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.08 }} className="mineral-panel relative p-6 sm:p-7">
+                <div className="absolute right-5 top-5 font-mono text-[10px] font-bold text-[#315CF4]">/ PROFILE</div>
+                <FileText size={24} strokeWidth={1.55} className="mb-12 text-[#315CF4]" />
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-muted-foreground">Working principle</p>
+                <p className="mt-3 text-lg font-bold leading-7 tracking-[-0.025em] text-foreground">Build the system. Keep the human at the center.</p>
+                <div className="mt-7 h-px w-full bg-foreground/[0.1]" />
+                <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Curious · detail-aware · delivery-minded</p>
+              </motion.aside>
             </div>
           </div>
         </section>
