@@ -6,10 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useTheme } from "@/contexts/ThemeContext";
+import { trpc } from "@/lib/trpc";
 import { motion } from "framer-motion";
 import {
   ArrowDown,
   ArrowUpRight,
+  Bot,
   Braces,
   Download,
   BrainCircuit,
@@ -19,10 +21,12 @@ import {
   FileText,
   Github,
   Linkedin,
+  Loader2,
   Mail,
   MapPin,
   Menu,
   Moon,
+  RotateCcw,
   Send,
   ServerCog,
   Sparkles,
@@ -30,6 +34,7 @@ import {
   X,
 } from "lucide-react";
 import { FormEvent, useState } from "react";
+import { Streamdown } from "streamdown";
 import { toast } from "sonner";
 
 const portraitImage = "/manus-storage/thenjiwe-mbi-portrait_855f98d3.jpg";
@@ -38,7 +43,7 @@ const govGuideImage = "/manus-storage/govguide-ai-visual_9b2bc022.jpg";
 const mobilityImage = "/manus-storage/mobility-booking-visual_e8a487a0.jpg";
 const signalMark = "/manus-storage/thenjiwe-signal-mark_1e1e740e.png";
 
-const navigation = ["About", "Skills", "Projects", "Contact"];
+const navigation = ["About", "Assistant", "Skills", "Projects", "Contact"];
 
 const capabilities = [
   { title: "Web Application Development", description: "Responsive interfaces with clear user flows.", icon: Code2 },
@@ -76,10 +81,40 @@ export default function Home() {
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [assistantQuestion, setAssistantQuestion] = useState("");
+  const [assistantMessages, setAssistantMessages] = useState<Array<{ role: "user" | "assistant"; content: string }>>([]);
+  const [assistantError, setAssistantError] = useState(false);
+  const assistantMutation = trpc.assistant.ask.useMutation({
+    onSuccess: ({ answer }) => {
+      setAssistantError(false);
+      setAssistantMessages(current => [...current, { role: "assistant", content: answer }]);
+    },
+    onError: () => {
+      setAssistantError(true);
+      toast.error("The assistant is unavailable right now. Please try again or use the contact form.");
+    },
+  });
 
   const goTo = (section: string) => {
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth", block: "start" });
     setMenuOpen(false);
+  };
+
+  const askAssistant = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const question = assistantQuestion.trim();
+    if (!question || assistantMutation.isPending) return;
+    setAssistantError(false);
+    setAssistantMessages(current => [...current, { role: "user", content: question }]);
+    setAssistantQuestion("");
+    assistantMutation.mutate({ question });
+  };
+
+  const retryAssistant = () => {
+    const lastUserMessage = [...assistantMessages].reverse().find(message => message.role === "user");
+    if (!lastUserMessage || assistantMutation.isPending) return;
+    setAssistantError(false);
+    assistantMutation.mutate({ question: lastUserMessage.content });
   };
 
   const sendEmail = (event: FormEvent<HTMLFormElement>) => {
@@ -189,9 +224,39 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="assistant" className="page-section assistant-section">
+          <div className="content-wrap">
+            <SectionTitle index="02" title="Ask the assistant" kicker="Software development, explained" />
+            <div className="assistant-grid">
+              <motion.div {...reveal} className="assistant-intro">
+                <span className="assistant-orb"><Bot size={21} /></span>
+                <p className="assistant-lead">Ask about my work, tools, and the way I think through software problems.</p>
+                <p>This assistant is grounded in the information on this portfolio. It can help you understand my skills, projects, background, and approach before we connect.</p>
+                <div className="assistant-prompts">
+                  {["What can you build?", "Tell me about GOVGUIDE AI", "What tools do you use?"].map(prompt => <button key={prompt} type="button" onClick={() => setAssistantQuestion(prompt)}>{prompt}<ArrowUpRight size={12} /></button>)}
+                </div>
+              </motion.div>
+              <motion.div {...reveal} transition={{ ...reveal.transition, delay: 0.08 }} className="assistant-panel">
+                <div className="assistant-panel__header"><span><i /> MBI T / DEV ASSIST</span><span className="assistant-status">ONLINE</span></div>
+                <div className="assistant-messages" aria-live="polite">
+                  {assistantMessages.length === 0 ? <div className="assistant-empty"><Bot size={25} /><p>Ask a question about Thenjiwe’s software-development profile.</p><small>Try one of the prompts or write your own question below.</small></div> : null}
+                  {assistantMessages.map((message, index) => <div key={`${message.role}-${index}`} className={`assistant-message assistant-message--${message.role}`}><span>{message.role === "user" ? "YOU" : "MBI T"}</span><div>{message.role === "assistant" ? <Streamdown>{message.content}</Streamdown> : message.content}</div></div>)}
+                  {assistantMutation.isPending ? <div className="assistant-message assistant-message--assistant"><span>MBI T</span><div className="assistant-thinking"><Loader2 size={14} className="animate-spin" /> Thinking through it...</div></div> : null}
+                  {assistantError ? <div className="assistant-error" role="alert"><div><strong>Couldn’t reach the assistant.</strong><small>Try your question again, or use the contact form below.</small></div><button type="button" onClick={retryAssistant}>Try again <RotateCcw size={11} /></button></div> : null}
+                </div>
+                <form onSubmit={askAssistant} className="assistant-input-row">
+                  <Input value={assistantQuestion} onChange={event => setAssistantQuestion(event.target.value)} placeholder="Ask about software development..." aria-label="Ask the software development assistant" maxLength={800} />
+                  <Button type="submit" disabled={assistantMutation.isPending || !assistantQuestion.trim()} className="ember-button">Ask <Send size={13} /></Button>
+                </form>
+                {assistantMessages.length > 0 ? <button type="button" onClick={() => setAssistantMessages([])} className="assistant-reset"><RotateCcw size={11} /> Clear conversation</button> : null}
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         <section id="skills" className="page-section skills-section">
           <div className="content-wrap">
-            <SectionTitle index="02" title="My toolkit" kicker="Skills & technologies" />
+            <SectionTitle index="03" title="My toolkit" kicker="Skills & technologies" />
             <motion.p {...reveal} className="section-description">Practical tools for designing responsive interfaces, connecting dependable services, and building useful data-driven products.</motion.p>
             <div className="skills-grid">
               {skillGroups.map((group, index) => <motion.article {...reveal} transition={{ ...reveal.transition, delay: index * 0.05 }} key={group.label} className="skill-card">
@@ -204,7 +269,7 @@ export default function Home() {
 
         <section id="projects" className="page-section projects-section">
           <div className="content-wrap">
-            <SectionTitle index="03" title="Projects" kicker="Selected work" />
+            <SectionTitle index="04" title="Projects" kicker="Selected work" />
             <div className="project-stack">
               <motion.article {...reveal} className="project-card">
                 <div className="project-card__media">
@@ -241,7 +306,7 @@ export default function Home() {
 
         <section id="contact" className="page-section contact-section">
           <div className="content-wrap">
-            <SectionTitle index="04" title="Let’s work together." kicker="Open channel" />
+            <SectionTitle index="05" title="Let’s work together." kicker="Open channel" />
             <div className="contact-grid">
               <motion.div {...reveal} className="contact-details">
                 <p>Have a product, system, or question in mind? Send a message and let’s start the right conversation.</p>
