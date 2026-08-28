@@ -10,11 +10,13 @@ import { motion } from "framer-motion";
 import {
   ArrowDown,
   ArrowUpRight,
-  Blocks,
   Braces,
+  Download,
   BrainCircuit,
   Code2,
   Database,
+  ExternalLink,
+  FileText,
   Github,
   Linkedin,
   Mail,
@@ -31,6 +33,7 @@ import { FormEvent, useState } from "react";
 import { toast } from "sonner";
 
 const portraitImage = "/manus-storage/thenjiwe-mbi-portrait_855f98d3.jpg";
+const cvFile = "/manus-storage/THENJIWEMBICV_9181d41e.pdf";
 const govGuideImage = "/manus-storage/govguide-ai-visual_9b2bc022.jpg";
 const mobilityImage = "/manus-storage/mobility-booking-visual_e8a487a0.jpg";
 const signalMark = "/manus-storage/thenjiwe-signal-mark_1e1e740e.png";
@@ -96,7 +99,7 @@ export default function Home() {
         <div className="site-header__inner">
           <button type="button" onClick={() => goTo("top")} className="brand-lockup" aria-label="Back to top">
             <img src={signalMark} alt="Thenjiwe Mbi brand mark" />
-            <span><b>THENJIWE MBI</b><small>SOFTWARE DEVELOPER</small></span>
+            <span><b>MBI T...</b><small>END-USER PRODUCTS</small></span>
           </button>
 
           <nav className="desktop-nav" aria-label="Primary navigation">
@@ -129,12 +132,16 @@ export default function Home() {
               className="hero-copy"
             >
               <p className="eyebrow"><span /> Cape Town, South Africa</p>
-              <p className="hero-greeting">Hello.<br /><span>I&apos;m Thenjiwe Mbi</span></p>
-              <h1>Software<br /><strong>Developer.</strong></h1>
+              <p className="hero-focus">Focuses specifically on end-user software products.</p>
+              <h1>MBI T...</h1>
               <p className="hero-summary">I build accessible web applications that make complex tasks easier to understand and use.</p>
               <div className="hero-ctas">
                 <Button type="button" onClick={() => goTo("projects")} className="ember-button">See my projects <ArrowUpRight size={15} /></Button>
                 <Button type="button" variant="outline" onClick={() => goTo("contact")} className="ghost-button">Message me <Send size={14} /></Button>
+              </div>
+              <div className="cv-actions">
+                <a href={cvFile} target="_blank" rel="noreferrer" className="cv-link"><FileText size={13} /> Preview CV <ExternalLink size={11} /></a>
+                <a href={cvFile} download="Thenjiwe-Mbi-CV.pdf" className="cv-link"><Download size={13} /> Download CV</a>
               </div>
               <div className="hero-meta"><span>REACT</span><span>WEB APPS</span><span>DATA</span></div>
             </motion.div>
@@ -150,7 +157,7 @@ export default function Home() {
                 <img src={portraitImage} alt="Thenjiwe Mbi" />
               </div>
               <span className="portrait-marker marker-one" /><span className="portrait-marker marker-two" />
-              <p className="portrait-caption">THENJIWE MBI <span>01</span></p>
+              <p className="portrait-caption">MBI T... <span>01</span></p>
             </motion.div>
           </div>
           <button type="button" onClick={() => goTo("about")} className="scroll-cue">Explore profile <ArrowDown size={14} /></button>
@@ -258,7 +265,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer><span>© {new Date().getFullYear()} Thenjiwe Mbi</span><span>Software developer / Cape Town</span><button type="button" onClick={() => goTo("top")}>Back to top <ArrowUpRight size={13} /></button></footer>
+      <footer><span>© {new Date().getFullYear()} MBI T...</span><span>End-user software products / Cape Town</span><button type="button" onClick={() => goTo("top")}>Back to top <ArrowUpRight size={13} /></button></footer>
     </div>
   );
 }
