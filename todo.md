@@ -14,4 +14,4 @@
 System note: the project remains full-stack-capable after the scaffold sync; no new database feature is needed for static CV delivery.
 - [x] Run a mobile viewport screenshot check after the CV and hero-copy changes.
 - [x] Save a new checkpoint for the CV-enabled portfolio revision after successful desktop/mobile validation.
-- [ ] Create the final checkpoint after the completed CV/copy update and validation evidence.
+- [x] Create the final checkpoint after the completed CV/copy update and validation evidence.
