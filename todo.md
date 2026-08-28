@@ -16,3 +16,8 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Save a new checkpoint for the CV-enabled portfolio revision after successful desktop/mobile validation.
 - [x] Create the final checkpoint after the completed CV/copy update and validation evidence.
 - [x] Make the “MBI T…” label small and place it above a large end-user software products headline.
+- [x] Give the New Message contact form a light-colored panel while keeping the rest of the portfolio dark.
+- [x] Run TypeScript and production build after the light contact-form styling change.
+- [x] Capture desktop and mobile screenshots verifying the light New Message panel against the dark contact section.
+- [x] Save a new checkpoint after validating the light contact-form refinement.
+- [ ] Save the validated light contact-panel revision as a new checkpoint.

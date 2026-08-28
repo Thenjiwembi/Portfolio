@@ -251,7 +251,7 @@ export default function Home() {
                 <div className="social-links"><span>Elsewhere</span><a href="https://github.com/thenjiwembi" target="_blank" rel="noreferrer" title="GitHub" aria-label="GitHub"><Github size={17} /></a><a href="https://za.linkedin.com/in/thenjiwe-mbi" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn"><Linkedin size={17} /></a></div>
               </motion.div>
 
-              <motion.form {...reveal} transition={{ ...reveal.transition, delay: 0.08 }} onSubmit={sendEmail} className="contact-form">
+              <motion.form {...reveal} transition={{ ...reveal.transition, delay: 0.08 }} onSubmit={sendEmail} className="contact-form contact-form--light">
                 <div className="form-header"><span>NEW MESSAGE</span><ServerCog size={16} /></div>
                 <div className="form-row">
                   <label>Name<Input required value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder="Your name" /></label>

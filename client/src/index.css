@@ -190,3 +190,48 @@
     .cv-actions { margin-top: 0.9rem; }
   }
 }
+
+/* The contact form intentionally switches to a light surface for contrast against the dark contact section. */
+@layer components {
+  .contact-form--light {
+    border-color: rgba(244, 245, 238, 0.32);
+    background: #f4f3ed;
+    color: #10232d;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-form--light .form-header {
+    border-color: rgba(16, 35, 45, 0.16);
+    color: #d9513d;
+  }
+
+  .contact-form--light label {
+    color: #526269;
+  }
+
+  .contact-form--light input,
+  .contact-form--light textarea {
+    border-color: rgba(16, 35, 45, 0.18);
+    background: #ffffff;
+    color: #10232d;
+  }
+
+  .contact-form--light input::placeholder,
+  .contact-form--light textarea::placeholder {
+    color: #849197;
+  }
+
+  .contact-form--light input:focus,
+  .contact-form--light textarea:focus {
+    border-color: #ed624a;
+    box-shadow: 0 0 0 2px rgba(237, 98, 74, 0.12);
+  }
+
+  .contact-form--light .form-footer {
+    border-color: rgba(16, 35, 45, 0.16);
+  }
+
+  .contact-form--light .form-footer small {
+    color: #617178;
+  }
+}
