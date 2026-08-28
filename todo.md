@@ -30,4 +30,14 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Convert the assistant into a floating icon that opens a compact question-and-answer chat panel on every page.
 - [x] Remove the standalone assistant section and its navigation item after the floating widget is in place.
 - [x] Validate the floating assistant on desktop and mobile and save a checkpoint.
-- [ ] Save a new checkpoint after the validated floating assistant widget update.
+- [x] Save a new checkpoint after the validated floating assistant widget update.
+- [x] Make the Skills section lighter and increase its typography slightly.
+- [x] Add a server-side contact submission flow that delivers messages to Thenjiwe’s email.
+- [x] Add contact submission success and failure feedback with tests and responsive validation.
+- [x] Update the Skills section code with a visibly lighter treatment and slightly larger typography, then revalidate it.
+- [x] Implement verifiable direct email delivery to thenjiwembi67@gmail.com for contact submissions.
+- [x] Add and run a contact-delivery failure-path test for service outages and verify clear user feedback.
+- [x] Replace the prior contact delivery integration with Formspree.
+- [x] Add the Formspree endpoint and preserve accessible success/error feedback.
+- [x] Add Formspree failure-path coverage and validate the updated contact flow.
+- [x] Confirm that Formspree endpoint xoeqqjyz forwards submissions to thenjiwembi67@gmail.com.

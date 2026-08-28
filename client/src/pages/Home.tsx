@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useTheme } from "@/contexts/ThemeContext";
+import { submitContact } from "@/lib/formspree";
 import { trpc } from "@/lib/trpc";
 import { motion } from "framer-motion";
 import {
@@ -82,6 +83,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [assistantOpen, setAssistantOpen] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [contactStatus, setContactStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [assistantQuestion, setAssistantQuestion] = useState("");
   const [assistantMessages, setAssistantMessages] = useState<Array<{ role: "user" | "assistant"; content: string }>>([]);
   const [assistantError, setAssistantError] = useState(false);
@@ -95,7 +97,6 @@ export default function Home() {
       toast.error("The assistant is unavailable right now. Please try again or use the contact form.");
     },
   });
-
   const goTo = (section: string) => {
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth", block: "start" });
     setMenuOpen(false);
@@ -118,15 +119,22 @@ export default function Home() {
     assistantMutation.mutate({ question: lastUserMessage.content });
   };
 
-  const sendEmail = (event: FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!form.name || !form.email || !form.message) {
-      toast.error("Please add your name, email, and message.");
+    if (!form.name || !form.email || !form.message || contactStatus === "sending") {
+      if (!form.name || !form.email || !form.message) toast.error("Please add your name, email, and message.");
       return;
     }
-    const subject = encodeURIComponent(`Portfolio enquiry from ${form.name}`);
-    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
-    window.location.href = `mailto:thenjiwembi67@gmail.com?subject=${subject}&body=${body}`;
+    setContactStatus("sending");
+    try {
+      await submitContact(form);
+      setForm({ name: "", email: "", message: "" });
+      setContactStatus("success");
+      toast.success("Your message has been sent to Thenjiwe.");
+    } catch {
+      setContactStatus("error");
+      toast.error("Your message could not be sent. Please try again or email Thenjiwe directly.");
+    }
   };
 
   return (
@@ -294,7 +302,7 @@ export default function Home() {
                   <label>Email<Input required type="email" value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder="you@email.com" /></label>
                 </div>
                 <label>Message<Textarea required value={form.message} onChange={event => setForm(current => ({ ...current, message: event.target.value }))} placeholder="Tell me a little about your idea..." /></label>
-                <div className="form-footer"><small>Opens a pre-addressed email to Thenjiwe.</small><Button type="submit" className="ember-button">Send message <Send size={14} /></Button></div>
+                <div className="form-footer"><small>{contactStatus === "error" ? "Delivery failed. Please try again or use the email link." : "Messages are delivered directly to Thenjiwe’s email."}</small><Button type="submit" disabled={contactStatus === "sending"} className="ember-button">{contactStatus === "sending" ? "Sending..." : "Send message"} <Send size={14} /></Button></div>
               </motion.form>
             </div>
           </div>
