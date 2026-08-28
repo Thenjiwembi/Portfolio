@@ -178,10 +178,10 @@ export default function Home() {
               </div>
               <motion.div {...reveal} className="about-copy">
                 <p className="about-lead">I turn technical requirements into <em>clear, useful</em> experiences.</p>
-                <p>My background in <strong>ICT Application Development at Cape Peninsula University of Technology</strong> shaped a practical approach to software design, data, and problem-solving. Professional development experience at <strong>Code7Solutions</strong> strengthened my focus on quality, usability, and dependable delivery.</p>
+                <p>My background in <strong>ICT Application Development at Cape Peninsula University of Technology</strong> shaped a practical approach to software design, data, and problem-solving. Professional development experience at <strong>Code7Solutions</strong>, together with my internship at <strong>CAPACITI as a Web Developer</strong>, continues to strengthen my focus on quality, usability, and dependable delivery.</p>
                 <div className="stats-strip">
                   <span><b>CPUT</b><small>ICT Application Development</small></span>
-                  <span><b>CAPE TOWN</b><small>South Africa</small></span>
+                  <span><b>CAPACITI</b><small>Web Developer Intern</small></span>
                   <span><b>CODE7</b><small>Developer experience</small></span>
                 </div>
               </motion.div>

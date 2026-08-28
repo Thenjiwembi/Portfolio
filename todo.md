@@ -20,4 +20,5 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Run TypeScript and production build after the light contact-form styling change.
 - [x] Capture desktop and mobile screenshots verifying the light New Message panel against the dark contact section.
 - [x] Save a new checkpoint after validating the light contact-form refinement.
-- [ ] Save the validated light contact-panel revision as a new checkpoint.
+- [x] Save the validated light contact-panel revision as a new checkpoint.
+- [x] Add CAPACITI Web Developer internship experience to the About Me section.
