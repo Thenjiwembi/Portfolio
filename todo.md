@@ -27,3 +27,7 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Add Vitest coverage for the assistant procedure and validate the production build.
 - [x] Add a visible assistant-panel error state with retry guidance when a request fails.
 - [x] Re-run desktop and mobile validation after adding the assistant error state.
+- [x] Convert the assistant into a floating icon that opens a compact question-and-answer chat panel on every page.
+- [x] Remove the standalone assistant section and its navigation item after the floating widget is in place.
+- [x] Validate the floating assistant on desktop and mobile and save a checkpoint.
+- [ ] Save a new checkpoint after the validated floating assistant widget update.
