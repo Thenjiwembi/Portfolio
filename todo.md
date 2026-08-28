@@ -15,3 +15,4 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Run a mobile viewport screenshot check after the CV and hero-copy changes.
 - [x] Save a new checkpoint for the CV-enabled portfolio revision after successful desktop/mobile validation.
 - [x] Create the final checkpoint after the completed CV/copy update and validation evidence.
+- [x] Make the “MBI T…” label small and place it above a large end-user software products headline.

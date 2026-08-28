@@ -132,8 +132,8 @@ export default function Home() {
               className="hero-copy"
             >
               <p className="eyebrow"><span /> Cape Town, South Africa</p>
-              <p className="hero-focus">Focuses specifically on end-user software products.</p>
-              <h1>MBI T...</h1>
+              <p className="hero-name">MBI T...</p>
+              <h1>Focuses specifically<br />on end-user<br /><strong>software products.</strong></h1>
               <p className="hero-summary">I build accessible web applications that make complex tasks easier to understand and use.</p>
               <div className="hero-ctas">
                 <Button type="button" onClick={() => goTo("projects")} className="ember-button">See my projects <ArrowUpRight size={15} /></Button>
