@@ -41,3 +41,6 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Add the Formspree endpoint and preserve accessible success/error feedback.
 - [x] Add Formspree failure-path coverage and validate the updated contact flow.
 - [x] Confirm that Formspree endpoint xoeqqjyz forwards submissions to thenjiwembi67@gmail.com.
+- [x] Add AI Content Muse / Prompt Craft Studio as a portfolio project with its live Lovable link.
+- [x] Add Sentiment Atlas as a portfolio project with its live demo link and accurate capability summary.
+- [x] Add project-specific visual treatments and validate the expanded Projects section on desktop and mobile.

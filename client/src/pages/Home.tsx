@@ -279,6 +279,41 @@ export default function Home() {
                   <div className="tag-row">{["JavaScript", "React", "Node.js", "CSS3", "HTML5"].map(tag => <span key={tag}>{tag}</span>)}</div>
                 </div>
               </motion.article>
+
+              <motion.article {...reveal} transition={{ ...reveal.transition, delay: 0.16 }} className="project-card">
+                <div className="project-card__media project-art project-art--muse">
+                  <div className="art-window">
+                    <div className="art-window__top"><span>AI CONTENT MUSE</span><i /><i /><i /></div>
+                    <div className="art-window__body"><span className="art-kicker">CONTENT GENERATOR</span><strong>Write with<br /><em>intention.</em></strong><div className="art-lines"><i /><i /><i /></div><span className="art-chip">PROMPT / 02</span></div>
+                  </div>
+                  <span className="project-label">03 / AI productivity</span>
+                  <span className="media-path">PROMPT <i /> REFINE <i /> CREATE</span>
+                </div>
+                <div className="project-card__copy">
+                  <p className="project-number">03</p>
+                  <h3>AI Content Muse</h3>
+                  <p>A content-generation workflow for turning prompt ideas into structured drafts for blogs, emails, code, and other everyday content.</p>
+                  <p className="project-detail">Built with Lovable as an individual project focused on prompt optimization, prompt libraries, content structuring, and AI productivity.</p>
+                  <div className="tag-row">{["Lovable", "Prompt Engineering", "Generative AI", "Content Workflows"].map(tag => <span key={tag}>{tag}</span>)}</div>
+                  <a href="https://prompt-craft-studio-456.lovable.app" target="_blank" rel="noreferrer" className="project-link">Open live app <ArrowUpRight size={13} /></a>
+                </div>
+              </motion.article>
+
+              <motion.article {...reveal} transition={{ ...reveal.transition, delay: 0.22 }} className="project-card project-card--reverse">
+                <div className="project-card__media project-art project-art--atlas">
+                  <div className="atlas-screen"><div className="atlas-screen__head"><span>SENTIMENT ATLAS</span><b>LIVE ANALYSIS</b></div><div className="atlas-bars"><i /><i /><i /><i /><i /></div><div className="atlas-axis"><span>VADER</span><span>HUGGING FACE</span></div><div className="atlas-orb" /></div>
+                  <span className="project-label">04 / Data intelligence</span>
+                  <span className="media-path">TEXT <i /> CSV <i /> WEB</span>
+                </div>
+                <div className="project-card__copy">
+                  <p className="project-number">04</p>
+                  <h3>Sentiment<br />Atlas</h3>
+                  <p>A secure, data-backed workspace for comparing VADER and Hugging Face sentiment results across text, CSV datasets, and public webpages.</p>
+                  <p className="project-detail">Includes authenticated history, owner-scoped reports, bounded link extraction, downloadable HTML insights, and persisted dataset metrics.</p>
+                  <div className="tag-row">{["React", "TypeScript", "tRPC", "Supabase", "Hugging Face", "VADER"].map(tag => <span key={tag}>{tag}</span>)}</div>
+                  <a href="https://aisentiment-sp7zjfjg.manus.space" target="_blank" rel="noreferrer" className="project-link">View live demo <ArrowUpRight size={13} /></a>
+                </div>
+              </motion.article>
             </div>
           </div>
         </section>
