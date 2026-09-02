@@ -44,3 +44,9 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Add AI Content Muse / Prompt Craft Studio as a portfolio project with its live Lovable link.
 - [x] Add Sentiment Atlas as a portfolio project with its live demo link and accurate capability summary.
 - [x] Add project-specific visual treatments and validate the expanded Projects section on desktop and mobile.
+- [x] Match Skills, Projects, Contact, hero surroundings, and floating assistant surfaces to the lighter About section.
+- [x] Improve contrast and readability for text, cards, and controls across the lighter page system.
+- [x] Validate the lighter portfolio on desktop and mobile and save a new checkpoint.
+- [x] Update the hero/landing surface to match the lighter About-section visual system and revalidate.
+- [x] Save a new checkpoint after the lighter portfolio-wide restyle is fully implemented and validated.
+- [ ] Save a new checkpoint for the lighter portfolio-wide restyle after the verified hero and section lightening changes.
