@@ -319,3 +319,15 @@
   .hero-section .ghost-button { border-color: rgba(17,37,48,.2); color: #112530; }
   .hero-section .ghost-button:hover { border-color: #ed624a; color: #d34b36; }
 }
+
+@layer components {
+  .site-header { background: rgba(249,252,250,.9); border-bottom-color: rgba(17,37,48,.08); }
+  .site-header__inner { border-bottom-color: rgba(17,37,48,.12); }
+  .brand-lockup, .header-icon { color: #112530; }.brand-lockup small, .desktop-nav button { color: #627477; }.desktop-nav button:hover, .header-icon:hover { color: #0f6d78; }.header-icon { border-color: rgba(17,37,48,.15); }
+  .hero-section { background: linear-gradient(120deg, #dff4f2 0%, #f6f9f5 56%, #f8f0df 100%); }
+  .hero-grid { gap: clamp(3rem, 7vw, 7rem); }
+  .hero-copy { max-width: 39rem; padding-left: 0; border-left: 0; }
+  .hero-brandline { display: flex; align-items: center; gap: .8rem; margin-bottom: 2.1rem; }.hero-brandline img { width: 3rem; height: 3rem; object-fit: contain; }.hero-brandline strong, .hero-brandline small { display: block; }.hero-brandline strong { color: #112530; font-size: 1.15rem; letter-spacing: -.04em; }.hero-brandline small { margin-top: .28rem; color: #627477; font-size: .5rem; font-weight: 700; letter-spacing: .17em; }
+  .hero-copy h1 { color: #112530; font-size: clamp(3.75rem, 6.4vw, 6.35rem); letter-spacing: -.075em; line-height: .89; }.hero-copy h1 .hero-products { color: #112530; }.hero-summary { max-width: 34rem; color: #53666b; font-size: .95rem; }.hero-meta { color: #627477; }.scroll-cue { color: #53666b; }
+  .portrait-stage { filter: drop-shadow(0 22px 30px rgba(17,37,48,.1)); }.portrait-stage::before { position: absolute; inset: 7% 3% 6% 11%; z-index: -1; border-radius: 2rem; background: rgba(255,255,255,.62); box-shadow: inset 0 0 0 1px rgba(255,255,255,.85); content: ""; transform: rotate(-4deg); }.portrait-caption { background: #112530; color: #f4f5ee; }
+}

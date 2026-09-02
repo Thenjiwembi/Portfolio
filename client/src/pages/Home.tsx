@@ -175,8 +175,7 @@ export default function Home() {
               transition={{ duration: 0.56, ease: "circOut" }}
               className="hero-copy"
             >
-              <p className="eyebrow"><span /> Cape Town, South Africa</p>
-              <p className="hero-name">MBI T...</p>
+              <div className="hero-brandline"><img src={signalMark} alt="" /><div><strong>MBI T...</strong><small>END-USER SOFTWARE PRODUCTS · CAPE TOWN</small></div></div>
               <h1>Focuses specifically<br />on end-user<br /><strong className="hero-products">software products.</strong></h1>
               <p className="hero-summary">I build accessible web applications that make complex tasks easier to understand and use.</p>
               <div className="hero-ctas">
