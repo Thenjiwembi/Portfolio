@@ -59,3 +59,9 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Validate the redesigned landing page on desktop and mobile and save a new checkpoint.
 - [x] Replace the hero headline with the approved end-user software statement and revalidate its typography.
 - [x] Replace the hero statement with “I build end-user software products focused on real user outcomes.” and revalidate its typography.
+- [x] Add a visible Home navigation link that returns visitors to the landing page and validate it responsively.
+- [x] Wire the Home navigation item to the existing landing-page anchor in both desktop and mobile menus.
+- [x] Re-run desktop/mobile validation after confirming the Home link target and save a checkpoint.
+- [x] Re-capture desktop and mobile screenshots after wiring Home to the landing anchor.
+- [x] Save a checkpoint for the validated Home-navigation update.
+- [ ] Save a new checkpoint after the Home-navigation fix and post-fix desktop/mobile screenshots.

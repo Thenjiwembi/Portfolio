@@ -44,7 +44,7 @@ const govGuideImage = "/manus-storage/govguide-ai-visual_9b2bc022.jpg";
 const mobilityImage = "/manus-storage/mobility-booking-visual_e8a487a0.jpg";
 const signalMark = "/manus-storage/thenjiwe-signal-mark_1e1e740e.png";
 
-const navigation = ["About", "Skills", "Projects", "Contact"];
+const navigation = ["Home", "About", "Skills", "Projects", "Contact"];
 
 const capabilities = [
   { title: "Web Application Development", description: "Responsive interfaces with clear user flows.", icon: Code2 },
@@ -147,7 +147,7 @@ export default function Home() {
           </button>
 
           <nav className="desktop-nav" aria-label="Primary navigation">
-            {navigation.map(item => <button key={item} type="button" onClick={() => goTo(item.toLowerCase())}>{item}</button>)}
+            {navigation.map(item => <button key={item} type="button" onClick={() => goTo(item === "Home" ? "top" : item.toLowerCase())}>{item}</button>)}
           </nav>
 
           <div className="header-actions">
@@ -161,7 +161,7 @@ export default function Home() {
         </div>
         {menuOpen ? (
           <nav className="mobile-nav" aria-label="Mobile navigation">
-            {navigation.map(item => <button key={item} type="button" onClick={() => goTo(item.toLowerCase())}>{item}<ArrowDown size={15} /></button>)}
+            {navigation.map(item => <button key={item} type="button" onClick={() => goTo(item === "Home" ? "top" : item.toLowerCase())}>{item}<ArrowDown size={15} /></button>)}
           </nav>
         ) : null}
       </header>
