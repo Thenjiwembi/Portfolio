@@ -58,3 +58,4 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Preserve the existing CV, contact, theme, and floating assistant controls in the new landing layout.
 - [x] Validate the redesigned landing page on desktop and mobile and save a new checkpoint.
 - [x] Replace the hero headline with the approved end-user software statement and revalidate its typography.
+- [x] Replace the hero statement with “I build end-user software products focused on real user outcomes.” and revalidate its typography.
