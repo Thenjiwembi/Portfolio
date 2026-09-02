@@ -176,7 +176,7 @@ export default function Home() {
               className="hero-copy"
             >
               <div className="hero-brandline"><img src={signalMark} alt="" /><div><strong>MBI T...</strong><small>END-USER SOFTWARE PRODUCTS · CAPE TOWN</small></div></div>
-              <h1>Focuses specifically<br />on end-user<br /><strong className="hero-products">software products.</strong></h1>
+              <h1 className="hero-statement">End-user software is where I spend my time: <strong className="hero-products">building user-focused features, designing smooth experiences, and delivering dependable software from idea to release.</strong></h1>
               <p className="hero-summary">I build accessible web applications that make complex tasks easier to understand and use.</p>
               <div className="hero-ctas">
                 <Button type="button" onClick={() => goTo("projects")} className="ember-button">See my projects <ArrowUpRight size={15} /></Button>

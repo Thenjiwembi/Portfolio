@@ -56,4 +56,5 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Redesign the landing header and hero toward the supplied GovGuide-inspired light composition.
 - [x] Reframe the hero with a soft blue/cream background, left-aligned content, and a framed right-side portrait treatment.
 - [x] Preserve the existing CV, contact, theme, and floating assistant controls in the new landing layout.
-- [ ] Validate the redesigned landing page on desktop and mobile and save a new checkpoint.
+- [x] Validate the redesigned landing page on desktop and mobile and save a new checkpoint.
+- [x] Replace the hero headline with the approved end-user software statement and revalidate its typography.
