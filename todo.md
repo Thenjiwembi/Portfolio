@@ -64,4 +64,4 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Re-run desktop/mobile validation after confirming the Home link target and save a checkpoint.
 - [x] Re-capture desktop and mobile screenshots after wiring Home to the landing anchor.
 - [x] Save a checkpoint for the validated Home-navigation update.
-- [ ] Save a new checkpoint after the Home-navigation fix and post-fix desktop/mobile screenshots.
+- [x] Save a new checkpoint after the Home-navigation fix and post-fix desktop/mobile screenshots.
