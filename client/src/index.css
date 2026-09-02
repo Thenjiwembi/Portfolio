@@ -312,6 +312,7 @@
 @layer components {
   .hero-section { background: #eef2ef; color: #112530; }
   .hero-copy h1, .hero-greeting span { color: #112530; }
+  .hero-copy h1 .hero-products { color: #112530; }
   .hero-greeting, .hero-summary, .eyebrow, .hero-meta { color: #53666b; }
   .hero-meta { color: rgba(83,102,107,.78); }
   .scroll-cue { color: #53666b; }

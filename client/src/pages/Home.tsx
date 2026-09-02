@@ -177,7 +177,7 @@ export default function Home() {
             >
               <p className="eyebrow"><span /> Cape Town, South Africa</p>
               <p className="hero-name">MBI T...</p>
-              <h1>Focuses specifically<br />on end-user<br /><strong>software products.</strong></h1>
+              <h1>Focuses specifically<br />on end-user<br /><strong className="hero-products">software products.</strong></h1>
               <p className="hero-summary">I build accessible web applications that make complex tasks easier to understand and use.</p>
               <div className="hero-ctas">
                 <Button type="button" onClick={() => goTo("projects")} className="ember-button">See my projects <ArrowUpRight size={15} /></Button>
@@ -262,6 +262,7 @@ export default function Home() {
                   <p>An AI-powered public-service assistant that helps citizens understand government procedures and requirements through conversational interaction.</p>
                   <p className="project-detail">Structured LLM prompts, token tracking, Supabase authentication, conversation archiving, and accessible UX.</p>
                   <div className="tag-row">{["React", "TypeScript", "Tailwind CSS", "Supabase", "LLM Integration"].map(tag => <span key={tag}>{tag}</span>)}</div>
+                  <a href="https://govguideai.lovable.app" target="_blank" rel="noreferrer" className="project-link">View live demo <ArrowUpRight size={13} /></a>
                 </div>
               </motion.article>
 

@@ -49,4 +49,7 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Validate the lighter portfolio on desktop and mobile and save a new checkpoint.
 - [x] Update the hero/landing surface to match the lighter About-section visual system and revalidate.
 - [x] Save a new checkpoint after the lighter portfolio-wide restyle is fully implemented and validated.
-- [ ] Save a new checkpoint for the lighter portfolio-wide restyle after the verified hero and section lightening changes.
+- [x] Save a new checkpoint for the lighter portfolio-wide restyle after the verified hero and section lightening changes.
+- [x] Set “software products” in the hero headline to a dark readable color.
+- [x] Add a GOVGUIDE AI live-demo link to the project card.
+- [ ] Validate the hero and GOVGUIDE project card on desktop and mobile and save a checkpoint.
