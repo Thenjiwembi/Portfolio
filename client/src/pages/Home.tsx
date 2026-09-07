@@ -39,7 +39,7 @@ import { Streamdown } from "streamdown";
 import { toast } from "sonner";
 
 const portraitImage = "/manus-storage/thenjiwe-mbi-portrait_855f98d3.jpg";
-const cvFile = "/manus-storage/THENJIWEMBICV_9181d41e.pdf";
+const cvFile = "/manus-storage/Thenjiwe_Mbi_CV_1c3e8cd7.pdf";
 const govGuideImage = "/manus-storage/govguide-ai-visual_9b2bc022.jpg";
 const mobilityImage = "/manus-storage/mobility-booking-visual_e8a487a0.jpg";
 const signalMark = "/manus-storage/thenjiwe-signal-mark_1e1e740e.png";

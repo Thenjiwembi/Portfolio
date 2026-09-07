@@ -65,3 +65,4 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Re-capture desktop and mobile screenshots after wiring Home to the landing anchor.
 - [x] Save a checkpoint for the validated Home-navigation update.
 - [x] Save a new checkpoint after the Home-navigation fix and post-fix desktop/mobile screenshots.
+- [x] Replace the portfolio CV with the attached Thenjiwe_Mbi_CV.pdf and validate Preview and Download controls.
