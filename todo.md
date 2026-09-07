@@ -71,4 +71,4 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Intake and organize the user’s certificate files with accurate metadata and Preview/Download controls.
 - [x] Validate the new pages and certificate controls, then save a checkpoint.
 - [x] Process the uploaded Certificates.zip and populate the Certificates page with accurate metadata and durable links.
-- [ ] Save a new checkpoint after the populated Certificates page and post-upload validation.
+- [x] Save a new checkpoint after the populated Certificates page and post-upload validation.
