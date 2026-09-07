@@ -374,3 +374,24 @@
     .education-card__body { order: 2; }
   }
 }
+
+@layer components {
+  .certificate-summary { display: inline-flex; align-items: center; gap: .65rem; margin: 0 0 1.35rem 6.45rem; padding: .75rem .9rem; border: 1px solid rgba(211,75,54,.24); background: #fff5f1; color: #d34b36; font-size: .68rem; }
+  .certificate-summary span { color: #53666b; }.certificate-summary strong { color: #112530; }
+  .certificate-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-left: 6.45rem; }
+  .certificate-card { display: flex; min-height: 15rem; flex-direction: column; padding: 1.25rem; border: 1px solid rgba(17,37,48,.16); background: #f9faf7; box-shadow: 0 12px 28px rgba(17,37,48,.05); }
+  .certificate-card__top { display: flex; align-items: center; justify-content: space-between; color: #d34b36; }
+  .certificate-card__top span { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .56rem; font-weight: 700; }
+  .certificate-card__date { margin: 1.25rem 0 .45rem; color: #d34b36; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .56rem; font-weight: 700; letter-spacing: .07em; }
+  .certificate-card h2 { margin: 0; color: #112530; font-size: clamp(1.25rem, 2.3vw, 1.8rem); letter-spacing: -.06em; line-height: .98; }
+  .certificate-card__issuer { margin: .8rem 0 0; color: #637579; font-size: .68rem; line-height: 1.45; }
+  .certificate-card__actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: auto; padding-top: 1.25rem; }
+  .certificate-card__actions a { display: inline-flex; align-items: center; gap: .35rem; padding: .42rem .52rem; border: 1px solid rgba(17,37,48,.16); color: #435a60; font-size: .58rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; transition: border-color 160ms ease, color 160ms ease; }
+  .certificate-card__actions a:hover { border-color: #ed624a; color: #d34b36; }
+  .certificate-card__open { display: inline-flex; align-items: center; gap: .35rem; margin-top: .9rem; color: #d34b36; font-size: .58rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .certificate-card__open:hover { color: #a63d2d; }
+  @media (max-width: 760px) {
+    .certificate-summary, .certificate-grid { margin-left: 0; }
+    .certificate-grid { grid-template-columns: 1fr; }
+  }
+}
