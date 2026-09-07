@@ -1,20 +1,20 @@
 import { Award, ArrowLeft, ArrowUpRight, Download, ExternalLink } from "lucide-react";
 
 const certificates = [
-  { title: "AI For Everyone", issuer: "DeepLearning.AI · Coursera", date: "13 Aug 2026", file: "/manus-storage/ThenjiweMbi_AI For Everyone_02a59411.pdf" },
-  { title: "AI For Everyone", issuer: "DeepLearning.AI · Coursera", date: "13 Aug 2026", file: "/manus-storage/ThenjiweMbi_Coursera AI for Everyone_1aab6c67.pdf" },
-  { title: "Discover the Art of Prompting", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/ThenjiweMbi_Discover the Art of Prompting_f0bcb386.pdf" },
-  { title: "Generative AI with Large Language Models", issuer: "DeepLearning.AI and Amazon Web Services · Coursera", date: "24 Aug 2026", file: "/manus-storage/ThenjiweMbi_Genarative AI with large language Models_3a6d5829.pdf" },
-  { title: "Introduction to AI", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/ThenjiweMbi_Introduction to AI_fe27e7b2.pdf" },
-  { title: "Introduction to Artificial Intelligence (AI)", issuer: "IBM · Coursera", date: "17 Aug 2026", file: "/manus-storage/ThenjiweMbi_Introduction to Artificial Intelligence (AI)_2ec64471.pdf" },
-  { title: "Introduction to Generative AI", issuer: "Google Cloud · Coursera", date: "20 Aug 2026", file: "/manus-storage/ThenjiweMbi_Introduction to Generative AI_13183791.pdf" },
-  { title: "Maximize Productivity With AI Tools", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/ThenjiweMbi_Maximize Productivity With AI Tools_264d6d99.pdf" },
-  { title: "Generative AI: Prompt Engineering Basics", issuer: "IBM · Coursera", date: "12 Aug 2026", file: "/manus-storage/ThenjiweMbi_Prompt Engineering Basics_49d1d0d3.pdf" },
-  { title: "Python for Data Science, AI & Development", issuer: "IBM · Coursera", date: "20 Aug 2026", file: "/manus-storage/ThenjiweMbi_PythonForDataScience,AI andDeelopment_fe8529c8.pdf" },
-  { title: "Stay Ahead of the AI Curve", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/ThenjiweMbi_Stay Ahead of the AI Curve_cb6aeb98.pdf" },
-  { title: "Unsupervised Learning, Recommenders, Reinforcement Learning", issuer: "DeepLearning.AI and Stanford Online · Coursera", date: "27 Aug 2026", file: "/manus-storage/ThenjiweMbi_Unsupervised Learning, Recommenders,_b385ca79.pdf" },
-  { title: "Use AI Responsibly", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/ThenjiweMbi_Use AI Responsibly_bc4f2259.pdf" },
-  { title: "Supervised Machine Learning: Regression and Classification", issuer: "DeepLearning.AI and Stanford Online · Coursera", date: "25 Aug 2026", file: "/manus-storage/ThenjiwMbi_Supervised Machine LearningRegression and_9c254358.pdf" },
+  { title: "AI For Everyone", issuer: "DeepLearning.AI · Coursera", date: "13 Aug 2026", file: "/manus-storage/certificate-01-ai-for-everyone_138d0ae7.pdf" },
+  { title: "AI For Everyone", issuer: "DeepLearning.AI · Coursera", date: "13 Aug 2026", file: "/manus-storage/certificate-02-ai-for-everyone_39b1d396.pdf" },
+  { title: "Discover the Art of Prompting", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/certificate-03-discover-the-art-of-prompting_d1e98125.pdf" },
+  { title: "Generative AI with Large Language Models", issuer: "DeepLearning.AI and Amazon Web Services · Coursera", date: "24 Aug 2026", file: "/manus-storage/certificate-04-generative-ai-large-language-models_537bde14.pdf" },
+  { title: "Introduction to AI", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/certificate-05-introduction-to-ai_a80609c3.pdf" },
+  { title: "Introduction to Artificial Intelligence (AI)", issuer: "IBM · Coursera", date: "17 Aug 2026", file: "/manus-storage/certificate-06-introduction-to-artificial-intelligence_c8a2fb50.pdf" },
+  { title: "Introduction to Generative AI", issuer: "Google Cloud · Coursera", date: "20 Aug 2026", file: "/manus-storage/certificate-07-introduction-to-generative-ai_74a53cdf.pdf" },
+  { title: "Maximize Productivity With AI Tools", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/certificate-08-maximize-productivity-with-ai-tools_aa78dc8f.pdf" },
+  { title: "Generative AI: Prompt Engineering Basics", issuer: "IBM · Coursera", date: "12 Aug 2026", file: "/manus-storage/certificate-09-prompt-engineering-basics_29ee32e8.pdf" },
+  { title: "Python for Data Science, AI & Development", issuer: "IBM · Coursera", date: "20 Aug 2026", file: "/manus-storage/certificate-10-python-data-science-ai-development_9e3fedfd.pdf" },
+  { title: "Stay Ahead of the AI Curve", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/certificate-11-stay-ahead-of-the-ai-curve_dd1c5fc3.pdf" },
+  { title: "Unsupervised Learning, Recommenders, Reinforcement Learning", issuer: "DeepLearning.AI and Stanford Online · Coursera", date: "27 Aug 2026", file: "/manus-storage/certificate-12-unsupervised-learning-recommenders_a301e414.pdf" },
+  { title: "Use AI Responsibly", issuer: "Google · Coursera", date: "11 Aug 2026", file: "/manus-storage/certificate-13-use-ai-responsibly_30c3e5fb.pdf" },
+  { title: "Supervised Machine Learning: Regression and Classification", issuer: "DeepLearning.AI and Stanford Online · Coursera", date: "25 Aug 2026", file: "/manus-storage/certificate-14-supervised-machine-learning_8453c275.pdf" },
 ];
 
 export default function Certificates() {

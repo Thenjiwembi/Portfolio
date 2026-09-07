@@ -72,3 +72,6 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Validate the new pages and certificate controls, then save a checkpoint.
 - [x] Process the uploaded Certificates.zip and populate the Certificates page with accurate metadata and durable links.
 - [x] Save a new checkpoint after the populated Certificates page and post-upload validation.
+- [x] Fix certificate Preview/View Certificate actions that currently return AccessDenied.
+- [x] Revalidate certificate preview and download actions, then save a checkpoint.
+- [ ] Save a new checkpoint after replacing certificate links with URL-safe storage keys.
