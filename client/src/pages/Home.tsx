@@ -44,7 +44,7 @@ const govGuideImage = "/manus-storage/govguide-ai-visual_9b2bc022.jpg";
 const mobilityImage = "/manus-storage/mobility-booking-visual_e8a487a0.jpg";
 const signalMark = "/manus-storage/thenjiwe-signal-mark_1e1e740e.png";
 
-const navigation = ["Home", "About", "Skills", "Projects", "Contact"];
+const navigation = ["Home", "About", "Skills", "Projects", "Education", "Certificates", "Contact"];
 
 const capabilities = [
   { title: "Web Application Development", description: "Responsive interfaces with clear user flows.", icon: Code2 },
@@ -98,8 +98,12 @@ export default function Home() {
     },
   });
   const goTo = (section: string) => {
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth", block: "start" });
     setMenuOpen(false);
+    if (section === "education" || section === "certificates") {
+      window.location.href = `/${section}`;
+      return;
+    }
+    document.getElementById(section)?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const askAssistant = (event: FormEvent<HTMLFormElement>) => {

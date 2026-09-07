@@ -66,3 +66,7 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Save a checkpoint for the validated Home-navigation update.
 - [x] Save a new checkpoint after the Home-navigation fix and post-fix desktop/mobile screenshots.
 - [x] Replace the portfolio CV with the attached Thenjiwe_Mbi_CV.pdf and validate Preview and Download controls.
+- [x] Extract education background from the latest CV for the Education page.
+- [x] Add Education and Certificates navigation and responsive page sections.
+- [ ] Intake and organize the user’s certificate files with accurate metadata and Preview/Download controls.
+- [ ] Validate the new pages and certificate controls, then save a checkpoint.
