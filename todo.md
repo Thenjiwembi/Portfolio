@@ -84,5 +84,5 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Increase AI assistant text contrast across headings, helper text, messages, suggestions, and form controls.
 - [x] Validate AI assistant readability on desktop and mobile, then save a checkpoint.
 - [x] Open the floating AI assistant and capture desktop/mobile screenshots showing its updated text states.
-- [ ] Save a new checkpoint after the AI assistant contrast update, explicit open-widget screenshots, and final validation.
+- [x] Save a new checkpoint after the AI assistant contrast update, explicit open-widget screenshots, and final validation.
 - [x] Save a new checkpoint after explicit AI assistant contrast validation.
