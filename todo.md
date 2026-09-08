@@ -80,4 +80,4 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Save a checkpoint for the complete portfolio assistant update.
 - [x] Add representative assistant-response tests for education, certificates, projects, contact, and CV questions.
 - [x] Run post-change assistant behavior validation for broad portfolio prompts before the final checkpoint.
-- [ ] Save a new checkpoint after the expanded assistant context, representative tests, and live broad-prompt validation.
+- [x] Save a new checkpoint after the expanded assistant context, representative tests, and live broad-prompt validation.
