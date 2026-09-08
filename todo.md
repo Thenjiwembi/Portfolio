@@ -81,3 +81,8 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Add representative assistant-response tests for education, certificates, projects, contact, and CV questions.
 - [x] Run post-change assistant behavior validation for broad portfolio prompts before the final checkpoint.
 - [x] Save a new checkpoint after the expanded assistant context, representative tests, and live broad-prompt validation.
+- [x] Increase AI assistant text contrast across headings, helper text, messages, suggestions, and form controls.
+- [x] Validate AI assistant readability on desktop and mobile, then save a checkpoint.
+- [x] Open the floating AI assistant and capture desktop/mobile screenshots showing its updated text states.
+- [ ] Save a new checkpoint after the AI assistant contrast update, explicit open-widget screenshots, and final validation.
+- [x] Save a new checkpoint after explicit AI assistant contrast validation.

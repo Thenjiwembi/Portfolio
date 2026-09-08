@@ -81,7 +81,7 @@ function SectionTitle({ index, title, kicker }: { index: string; title: string; 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [assistantOpen, setAssistantOpen] = useState(false);
+  const [assistantOpen, setAssistantOpen] = useState(() => new URLSearchParams(window.location.search).get("assistant") === "open");
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [contactStatus, setContactStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [assistantQuestion, setAssistantQuestion] = useState("");
