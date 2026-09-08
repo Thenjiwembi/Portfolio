@@ -351,14 +351,14 @@ export default function Home() {
       <div className="assistant-widget-root">
         {assistantOpen ? <div className="assistant-widget-popover" role="dialog" aria-label="MBI T software development assistant">
           <div className="assistant-panel__header"><span><i /> MBI T / DEV ASSIST</span><button type="button" onClick={() => setAssistantOpen(false)} aria-label="Close assistant"><X size={15} /></button></div>
-          <div className="assistant-widget__intro"><Bot size={19} /><div><strong>Ask me anything about my work.</strong><small>Skills, projects, tools, and software development.</small></div></div>
+          <div className="assistant-widget__intro"><Bot size={19} /><div><strong>Ask me anything about my portfolio.</strong><small>Work, education, skills, projects, certificates, CV, and contact.</small></div></div>
           <div className="assistant-messages" aria-live="polite">
-            {assistantMessages.length === 0 ? <div className="assistant-empty"><p>What would you like to know?</p><small>Your question will be answered using the information on this portfolio.</small></div> : null}
+            {assistantMessages.length === 0 ? <div className="assistant-empty"><p>What would you like to know?</p><small>Ask about Thenjiwe’s work, education, skills, projects, certificates, CV, or contact details.</small></div> : null}
             {assistantMessages.map((message, index) => <div key={`${message.role}-${index}`} className={`assistant-message assistant-message--${message.role}`}><span>{message.role === "user" ? "YOU" : "MBI T"}</span><div>{message.role === "assistant" ? <Streamdown>{message.content}</Streamdown> : message.content}</div></div>)}
             {assistantMutation.isPending ? <div className="assistant-message assistant-message--assistant"><span>MBI T</span><div className="assistant-thinking"><Loader2 size={14} className="animate-spin" /> Thinking through it...</div></div> : null}
             {assistantError ? <div className="assistant-error" role="alert"><div><strong>Couldn’t reach the assistant.</strong><small>Try again or use the contact form below.</small></div><button type="button" onClick={retryAssistant}>Retry <RotateCcw size={11} /></button></div> : null}
           </div>
-          {assistantMessages.length === 0 ? <div className="assistant-widget__suggestions">{["What can you build?", "Tell me about GOVGUIDE AI"].map(prompt => <button key={prompt} type="button" onClick={() => setAssistantQuestion(prompt)}>{prompt}</button>)}</div> : null}
+          {assistantMessages.length === 0 ? <div className="assistant-widget__suggestions">{["What can Thenjiwe do?", "What did she study?", "What certificates does she have?", "How can I contact her?"].map(prompt => <button key={prompt} type="button" onClick={() => setAssistantQuestion(prompt)}>{prompt}</button>)}</div> : null}
           <form onSubmit={askAssistant} className="assistant-input-row">
             <Input autoFocus={assistantOpen} value={assistantQuestion} onChange={event => setAssistantQuestion(event.target.value)} placeholder="Type your question..." aria-label="Ask the software development assistant" maxLength={800} />
             <Button type="submit" disabled={assistantMutation.isPending || !assistantQuestion.trim()} className="ember-button">Ask <Send size={13} /></Button>

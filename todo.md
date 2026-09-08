@@ -74,4 +74,10 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Save a new checkpoint after the populated Certificates page and post-upload validation.
 - [x] Fix certificate Preview/View Certificate actions that currently return AccessDenied.
 - [x] Revalidate certificate preview and download actions, then save a checkpoint.
-- [ ] Save a new checkpoint after replacing certificate links with URL-safe storage keys.
+- [x] Save a new checkpoint after replacing certificate links with URL-safe storage keys.
+- [x] Expand the AI assistant context to cover the complete portfolio, including education and certificates.
+- [x] Add grounded coverage for broad portfolio questions and validate responses and the production build.
+- [x] Save a checkpoint for the complete portfolio assistant update.
+- [x] Add representative assistant-response tests for education, certificates, projects, contact, and CV questions.
+- [x] Run post-change assistant behavior validation for broad portfolio prompts before the final checkpoint.
+- [ ] Save a new checkpoint after the expanded assistant context, representative tests, and live broad-prompt validation.
