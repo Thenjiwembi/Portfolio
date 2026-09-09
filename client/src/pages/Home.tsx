@@ -199,12 +199,9 @@ export default function Home() {
               transition={{ duration: 0.65, delay: 0.06, ease: "circOut" }}
               className="portrait-stage"
             >
-              <div className="orbit orbit-a" /><div className="orbit orbit-b" /><div className="portrait-halo" />
               <div className="portrait-frame">
                 <img src={portraitImage} alt="Thenjiwe Mbi" />
               </div>
-              <span className="portrait-marker marker-one" /><span className="portrait-marker marker-two" />
-              <p className="portrait-caption">MBI T... <span>01</span></p>
             </motion.div>
           </div>
           <button type="button" onClick={() => goTo("about")} className="scroll-cue">Explore profile <ArrowDown size={14} /></button>
