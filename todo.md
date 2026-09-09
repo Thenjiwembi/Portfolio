@@ -85,4 +85,8 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Validate AI assistant readability on desktop and mobile, then save a checkpoint.
 - [x] Open the floating AI assistant and capture desktop/mobile screenshots showing its updated text states.
 - [x] Save a new checkpoint after the AI assistant contrast update, explicit open-widget screenshots, and final validation.
+- [x] Rewrite all four project descriptions with accurate roles, technologies, and development contributions.
+- [x] Synchronize the AI assistant project context and validate the updated portfolio content.
+- [ ] Save a new checkpoint after the clarified project descriptions and synchronized assistant context are fully validated.
+- [x] Save a checkpoint for the clarified project descriptions.
 - [x] Save a new checkpoint after explicit AI assistant contrast validation.

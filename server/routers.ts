@@ -37,13 +37,13 @@ SKILLS
 
 PROJECTS
 1. GOVGUIDE AI — Live demo: https://govguideai.lovable.app
-   An AI-powered public-service assistant that helps citizens understand government procedures and requirements through conversational interaction. The portfolio highlights structured LLM prompts, token tracking, Supabase authentication, conversation archiving, and accessible UX. It is a strong example of conversational AI, prompt design, and user-focused public-service software.
+   Thenjiwe was the Group Lead and Front-end Designer for this AI-powered public-service assistant. She designed and developed the front-end experience that helps citizens understand government procedures and requirements through conversational interaction. The portfolio highlights React, TypeScript, Tailwind CSS, structured LLM prompts, token tracking, Supabase authentication, conversation archiving, and accessible UX.
 2. Hospitality & Car Rental App
-   An in-hotel booking platform that lets hotel guests choose, customize, and pay for rental vehicles directly. Customization includes vehicle type, rental duration, and colour. Technologies listed are JavaScript, React, Node.js, CSS3, and HTML5.
+   Thenjiwe focused on the backend development of this in-hotel booking platform, which lets hotel guests choose, customize, and pay for rental vehicles directly. Her contribution covered server-side logic and data flow for vehicle type, rental duration, colour selection, and the guest-first booking flow. Technologies listed are JavaScript, React, Node.js, CSS3, and HTML5.
 3. AI Content Muse / Prompt Craft Studio — Live app: https://prompt-craft-studio-456.lovable.app
-   An individual content-generation project for AI productivity workflows. The portfolio describes prompt optimization, prompt iteration and refinement, AI-generated content, content structuring, a prompt library, and a functional content generator for outputs such as blogs, emails, or code.
+   Thenjiwe created the entire project independently as an individual build. It is a content-generation workflow for AI productivity, with prompt optimization, prompt iteration, AI-generated content, content structuring, a prompt library, and a functional generator for outputs such as blogs, emails, or code. It was built with Lovable.
 4. Sentiment Atlas — Live demo: https://aisentiment-sp7zjfjg.manus.space
-   A secure, data-backed workspace for comparing VADER and Hugging Face sentiment results across text, CSV datasets, and public webpages. Listed capabilities include authenticated history, owner-scoped reports, bounded link extraction, downloadable HTML insights, and persisted dataset metrics. Technologies include React, TypeScript, tRPC, Supabase, Hugging Face, and VADER.
+   Thenjiwe focused on the backend and database development of this secure, data-backed workspace for comparing VADER and Hugging Face sentiment results across text, CSV datasets, and public webpages. Her contribution includes authenticated history, owner-scoped reports, bounded link extraction, downloadable HTML insights, and persisted dataset metrics. Technologies include React, TypeScript, tRPC, Supabase, Hugging Face, and VADER.
 
 CERTIFICATES
 The Certificates page contains 14 Coursera certificates uploaded by Thenjiwe:

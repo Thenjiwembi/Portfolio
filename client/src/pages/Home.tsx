@@ -262,8 +262,8 @@ export default function Home() {
                 <div className="project-card__copy">
                   <p className="project-number">01</p>
                   <h3>GOVGUIDE AI</h3>
-                  <p>An AI-powered public-service assistant that helps citizens understand government procedures and requirements through conversational interaction.</p>
-                  <p className="project-detail">Structured LLM prompts, token tracking, Supabase authentication, conversation archiving, and accessible UX.</p>
+                  <p>As the <strong>Group Lead and Front-end Designer</strong>, I helped shape GOVGUIDE AI into an accessible public-service assistant that helps citizens understand government procedures and requirements through conversation.</p>
+                  <p className="project-detail">I designed and developed the front-end experience with React, TypeScript, and Tailwind CSS, connecting structured LLM prompts, token tracking, Supabase authentication, conversation archiving, and accessible UX.</p>
                   <div className="tag-row">{["React", "TypeScript", "Tailwind CSS", "Supabase", "LLM Integration"].map(tag => <span key={tag}>{tag}</span>)}</div>
                   <a href="https://govguideai.lovable.app" target="_blank" rel="noreferrer" className="project-link">View live demo <ArrowUpRight size={13} /></a>
                 </div>
@@ -278,8 +278,8 @@ export default function Home() {
                 <div className="project-card__copy">
                   <p className="project-number">02</p>
                   <h3>Hospitality &<br />Car Rental App</h3>
-                  <p>An in-hotel booking platform that lets guests choose, customize, and pay for rental vehicles directly.</p>
-                  <p className="project-detail">Vehicle type, duration, and colour selection are designed as a simple guest-first flow.</p>
+                  <p>I focused on the <strong>backend development</strong> of this in-hotel booking platform, which lets guests choose, customize, and pay for rental vehicles directly.</p>
+                  <p className="project-detail">Using JavaScript, Node.js, React, CSS3, and HTML5, I worked on the server-side logic and data flow supporting vehicle type, duration, colour selection, and the guest-first booking flow.</p>
                   <div className="tag-row">{["JavaScript", "React", "Node.js", "CSS3", "HTML5"].map(tag => <span key={tag}>{tag}</span>)}</div>
                 </div>
               </motion.article>
@@ -296,8 +296,8 @@ export default function Home() {
                 <div className="project-card__copy">
                   <p className="project-number">03</p>
                   <h3>AI Content Muse</h3>
-                  <p>A content-generation workflow for turning prompt ideas into structured drafts for blogs, emails, code, and other everyday content.</p>
-                  <p className="project-detail">Built with Lovable as an individual project focused on prompt optimization, prompt libraries, content structuring, and AI productivity.</p>
+                  <p>I created the <strong>entire AI Content Muse project independently</strong> as an individual build for turning prompt ideas into structured drafts for blogs, emails, code, and other everyday content.</p>
+                  <p className="project-detail">Built with Lovable, I developed the full workflow around prompt optimization, prompt libraries, content structuring, generative AI, and practical AI productivity.</p>
                   <div className="tag-row">{["Lovable", "Prompt Engineering", "Generative AI", "Content Workflows"].map(tag => <span key={tag}>{tag}</span>)}</div>
                   <a href="https://prompt-craft-studio-456.lovable.app" target="_blank" rel="noreferrer" className="project-link">Open live app <ArrowUpRight size={13} /></a>
                 </div>
@@ -312,8 +312,8 @@ export default function Home() {
                 <div className="project-card__copy">
                   <p className="project-number">04</p>
                   <h3>Sentiment<br />Atlas</h3>
-                  <p>A secure, data-backed workspace for comparing VADER and Hugging Face sentiment results across text, CSV datasets, and public webpages.</p>
-                  <p className="project-detail">Includes authenticated history, owner-scoped reports, bounded link extraction, downloadable HTML insights, and persisted dataset metrics.</p>
+                  <p>I focused on the <strong>backend and database development</strong> of this secure workspace for comparing VADER and Hugging Face sentiment results across text, CSV datasets, and public webpages.</p>
+                  <p className="project-detail">Using React, TypeScript, tRPC, Supabase, Hugging Face, and VADER, I worked on authenticated history, owner-scoped reports, bounded link extraction, downloadable HTML insights, and persisted dataset metrics.</p>
                   <div className="tag-row">{["React", "TypeScript", "tRPC", "Supabase", "Hugging Face", "VADER"].map(tag => <span key={tag}>{tag}</span>)}</div>
                   <a href="https://aisentiment-sp7zjfjg.manus.space" target="_blank" rel="noreferrer" className="project-link">View live demo <ArrowUpRight size={13} /></a>
                 </div>
