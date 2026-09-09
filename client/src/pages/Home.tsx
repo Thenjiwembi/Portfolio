@@ -332,13 +332,13 @@ export default function Home() {
               </motion.div>
 
               <motion.form {...reveal} transition={{ ...reveal.transition, delay: 0.08 }} onSubmit={sendEmail} className="contact-form contact-form--light">
-                <div className="form-header"><div><span>START A CONVERSATION</span><h3>Let’s make something useful.</h3><p>Share the idea, problem, or product you’re exploring. A thoughtful first message is enough.</p></div><div className="form-header__icon"><Sparkles size={17} /></div></div>
-                <div className="contact-form__prompts"><span>Good for</span><b>web apps</b><b>AI features</b><b>product ideas</b></div>
+                <div className="form-header"><div><span>CONTACT ME</span><h3>Contact me</h3><p>Have an idea or question? Send a message and I’ll get back to you.</p></div><div className="form-header__icon"><Sparkles size={17} /></div></div>
+                <div className="contact-form__prompts"><span>Let’s talk about</span><b>web apps</b><b>AI features</b><b>product ideas</b></div>
                 <div className="form-row">
-                  <label>Your name<Input required value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder="How should I address you?" /></label>
-                  <label>Your email<Input required type="email" value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder="you@email.com" /></label>
+                  <label>Name<Input required value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder="Your name" /></label>
+                  <label>Email<Input required type="email" value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder="you@email.com" /></label>
                 </div>
-                <label>What are you building?<Textarea required value={form.message} onChange={event => setForm(current => ({ ...current, message: event.target.value }))} placeholder="Tell me what you’re trying to make, improve, or understand..." /></label>
+                <label>Message<Textarea required value={form.message} onChange={event => setForm(current => ({ ...current, message: event.target.value }))} placeholder="Write your message..." /></label>
                 <div className="form-footer"><small>{contactStatus === "error" ? "Delivery failed. Please try again or use the email link." : "Messages go directly to Thenjiwe’s email. No perfect pitch required."}</small><Button type="submit" disabled={contactStatus === "sending"} className="ember-button">{contactStatus === "sending" ? "Sending..." : "Start the conversation"} <Send size={14} /></Button></div>
               </motion.form>
             </div>

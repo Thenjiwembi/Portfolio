@@ -94,6 +94,9 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Redesign the Contact form to match the portfolio colors and create a more inviting message-starting experience.
 - [x] Validate Formspree delivery feedback and the redesigned Contact section on desktop and mobile, then save a checkpoint.
 - [x] Explicitly re-run Formspree success and failure-path tests after the Contact form redesign.
-- [ ] Save a new checkpoint after the inviting Contact form redesign and responsive validation.
+- [x] Save a new checkpoint after the inviting Contact form redesign and responsive validation.
+- [x] Change the contact form heading to “Contact me” and use exactly Name, Email, and Message fields.
+- [x] Validate the corrected Formspree form on desktop and mobile, then save a checkpoint.
+- [ ] Save a new checkpoint after the corrected Contact me heading and exact Name, Email, and Message fields are validated.
 - [x] Save a checkpoint for the clarified project descriptions.
 - [x] Save a new checkpoint after explicit AI assistant contrast validation.
