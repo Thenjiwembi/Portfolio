@@ -90,6 +90,10 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Save a new checkpoint after the clarified project descriptions and synchronized assistant context are fully validated.
 - [x] Make the hero portrait a simple round image and remove the orange background and decorative framing.
 - [x] Validate the round portrait on desktop and mobile, then save a checkpoint.
-- [ ] Save a new checkpoint after the clean round portrait update and responsive validation.
+- [x] Save a new checkpoint after the clean round portrait update and responsive validation.
+- [x] Redesign the Contact form to match the portfolio colors and create a more inviting message-starting experience.
+- [x] Validate Formspree delivery feedback and the redesigned Contact section on desktop and mobile, then save a checkpoint.
+- [x] Explicitly re-run Formspree success and failure-path tests after the Contact form redesign.
+- [ ] Save a new checkpoint after the inviting Contact form redesign and responsive validation.
 - [x] Save a checkpoint for the clarified project descriptions.
 - [x] Save a new checkpoint after explicit AI assistant contrast validation.

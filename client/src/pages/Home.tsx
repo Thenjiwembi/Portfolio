@@ -324,7 +324,7 @@ export default function Home() {
             <SectionTitle index="04" title="Let’s work together." kicker="Open channel" />
             <div className="contact-grid">
               <motion.div {...reveal} className="contact-details">
-                <p>Have a product, system, or question in mind? Send a message and let’s start the right conversation.</p>
+                <p>Have an idea, a product challenge, or a system that needs a clearer path? Tell me what you’re working toward and let’s find a useful next step.</p>
                 <a href="mailto:thenjiwembi67@gmail.com"><Mail size={16} /><span><small>Email</small>thenjiwembi67@gmail.com</span><ArrowUpRight size={14} /></a>
                 <a href="tel:+27721613975"><Sparkles size={16} /><span><small>Phone</small>+27 72 161 3975</span><ArrowUpRight size={14} /></a>
                 <a href="https://www.google.com/maps/search/?api=1&query=Cape+Town%2C+South+Africa" target="_blank" rel="noreferrer"><MapPin size={16} /><span><small>Based in</small>Cape Town, South Africa</span><ArrowUpRight size={14} /></a>
@@ -332,13 +332,14 @@ export default function Home() {
               </motion.div>
 
               <motion.form {...reveal} transition={{ ...reveal.transition, delay: 0.08 }} onSubmit={sendEmail} className="contact-form contact-form--light">
-                <div className="form-header"><span>NEW MESSAGE</span><ServerCog size={16} /></div>
+                <div className="form-header"><div><span>START A CONVERSATION</span><h3>Let’s make something useful.</h3><p>Share the idea, problem, or product you’re exploring. A thoughtful first message is enough.</p></div><div className="form-header__icon"><Sparkles size={17} /></div></div>
+                <div className="contact-form__prompts"><span>Good for</span><b>web apps</b><b>AI features</b><b>product ideas</b></div>
                 <div className="form-row">
-                  <label>Name<Input required value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder="Your name" /></label>
-                  <label>Email<Input required type="email" value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder="you@email.com" /></label>
+                  <label>Your name<Input required value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder="How should I address you?" /></label>
+                  <label>Your email<Input required type="email" value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder="you@email.com" /></label>
                 </div>
-                <label>Message<Textarea required value={form.message} onChange={event => setForm(current => ({ ...current, message: event.target.value }))} placeholder="Tell me a little about your idea..." /></label>
-                <div className="form-footer"><small>{contactStatus === "error" ? "Delivery failed. Please try again or use the email link." : "Messages are delivered directly to Thenjiwe’s email."}</small><Button type="submit" disabled={contactStatus === "sending"} className="ember-button">{contactStatus === "sending" ? "Sending..." : "Send message"} <Send size={14} /></Button></div>
+                <label>What are you building?<Textarea required value={form.message} onChange={event => setForm(current => ({ ...current, message: event.target.value }))} placeholder="Tell me what you’re trying to make, improve, or understand..." /></label>
+                <div className="form-footer"><small>{contactStatus === "error" ? "Delivery failed. Please try again or use the email link." : "Messages go directly to Thenjiwe’s email. No perfect pitch required."}</small><Button type="submit" disabled={contactStatus === "sending"} className="ember-button">{contactStatus === "sending" ? "Sending..." : "Start the conversation"} <Send size={14} /></Button></div>
               </motion.form>
             </div>
           </div>
