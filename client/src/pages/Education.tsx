@@ -1,3 +1,4 @@
+import PortfolioAssistant from "@/components/PortfolioAssistant";
 import { ArrowLeft, BookOpen, GraduationCap, MapPin } from "lucide-react";
 
 const education = [
@@ -47,6 +48,7 @@ export default function Education() {
           ))}
         </div>
       </section>
+      <PortfolioAssistant />
     </main>
   );
 }

@@ -1,3 +1,4 @@
+import PortfolioAssistant from "@/components/PortfolioAssistant";
 import { Award, ArrowLeft, ArrowUpRight, Download, ExternalLink } from "lucide-react";
 
 const certificates = [
@@ -49,6 +50,7 @@ export default function Certificates() {
           ))}
         </div>
       </section>
+      <PortfolioAssistant />
     </main>
   );
 }
