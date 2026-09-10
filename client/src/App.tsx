@@ -28,7 +28,7 @@ function Router() {
 export default function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark" switchable>
+      <ThemeProvider defaultTheme="light" switchable>
         <TooltipProvider>
           <Toaster richColors position="bottom-right" />
           <Router />

@@ -536,3 +536,77 @@
     align-items: flex-start;
   }
 }
+
+/* Theme repair: keep the light portfolio palette intact while giving Dark Mode
+   complete, readable surfaces for every route and interactive panel. */
+.dark .site-header {
+  background: linear-gradient(to bottom, rgba(9, 22, 30, 0.96), rgba(9, 22, 30, 0.82));
+  border-bottom-color: rgba(198, 215, 219, 0.14);
+}
+.dark .site-header__inner { border-bottom-color: rgba(198, 215, 219, 0.14); }
+.dark .brand-lockup, .dark .header-icon { color: #f4f5ee; }
+.dark .brand-lockup small, .dark .desktop-nav button { color: #9caab0; }
+.dark .desktop-nav button:hover, .dark .header-icon:hover { color: #ff8b78; }
+.dark .header-icon { border-color: rgba(198, 215, 219, 0.18); }
+.dark .hero-section {
+  background: linear-gradient(120deg, #0b202a 0%, #0b171f 58%, #2a2520 100%);
+  color: #f4f5ee;
+}
+.dark .hero-copy h1, .dark .hero-greeting span, .dark .hero-copy h1 .hero-products, .dark .hero-brandline strong { color: #f4f5ee; }
+.dark .hero-greeting, .dark .hero-summary, .dark .eyebrow, .dark .hero-meta, .dark .hero-brandline small, .dark .scroll-cue { color: #aab8bc; }
+.dark .hero-section .ghost-button { border-color: rgba(198, 215, 219, 0.22); color: #f4f5ee; }
+.dark .hero-section .ghost-button:hover { border-color: #ff6247; color: #ff9b8a; }
+.dark .about-section, .dark .skills-section, .dark .projects-section, .dark .contact-section { background: #0c1c25; color: #f4f5ee; }
+.dark .skills-section { background: #0e222c; }
+.dark .projects-section { background: #0a1921; }
+.dark .contact-section { background: linear-gradient(135deg, #0c2029 0%, #0c1c25 62%, #29231e 100%); }
+.dark .about-section .section-title h2, .dark .skills-section .section-title h2, .dark .projects-section .section-title h2, .dark .contact-section .section-title h2,
+.dark .about-section .capability h3, .dark .about-section .about-lead, .dark .about-section .about-copy strong,
+.dark .skills-section .skill-card__top h3, .dark .projects-section .project-card__copy h3, .dark .contact-section .contact-details span { color: #f4f5ee; }
+.dark .about-section .about-copy > p:not(.about-lead), .dark .skills-section .section-description, .dark .projects-section .project-card__copy > p:not(.project-number):not(.project-detail), .dark .contact-section .contact-details > p { color: #aab8bc; }
+.dark .about-section .capability-rail, .dark .about-section .capability__icon, .dark .about-section .stats-strip, .dark .about-section .stats-strip span { border-color: rgba(198, 215, 219, 0.16); }
+.dark .about-section .stats-strip { background: rgba(198, 215, 219, 0.12); }
+.dark .about-section .stats-strip span, .dark .skills-section .skill-card, .dark .projects-section .project-card, .dark .projects-section .project-card__copy { background: #10232d; }
+.dark .about-section .stats-strip small, .dark .projects-section .project-detail { color: #9caab0; }
+.dark .skills-section .skill-card, .dark .projects-section .project-card { border-color: rgba(198, 215, 219, 0.16); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18); }
+.dark .skills-section .skill-list span, .dark .projects-section .tag-row span { border-color: rgba(198, 215, 219, 0.18); background: #132a35; color: #c7d3d5; }
+.dark .contact-section .contact-details > a { border-color: rgba(198, 215, 219, 0.16); color: #f4f5ee; }
+.dark .contact-section .contact-details > a:hover { color: #ff9b8a; }
+.dark .contact-section .social-links a { border-color: rgba(198, 215, 219, 0.18); color: #f4f5ee; }
+.dark .contact-form--light { border-color: rgba(198, 215, 219, 0.16); background: rgba(16, 35, 45, 0.92); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28); }
+.dark .contact-form--light .form-header { border-bottom-color: rgba(198, 215, 219, 0.14); }
+.dark .contact-form--light .form-header h3 { color: #f4f5ee; }
+.dark .contact-form--light .form-header p, .dark .contact-form--light label, .dark .contact-form--light .form-footer small { color: #aab8bc; }
+.dark .form-header__icon { border-color: rgba(255, 98, 71, 0.32); background: rgba(255, 98, 71, 0.12); }
+.dark .contact-form__prompts span { color: #9caab0; }
+.dark .contact-form__prompts b { border-color: rgba(198, 215, 219, 0.16); background: rgba(19, 42, 53, 0.8); color: #c7d3d5; }
+.dark .contact-form--light input, .dark .contact-form--light textarea { border-color: rgba(198, 215, 219, 0.2); background: #0b1b23; color: #f4f5ee; }
+.dark .contact-form--light input::placeholder, .dark .contact-form--light textarea::placeholder { color: #819196; }
+.dark .contact-form--light input:focus, .dark .contact-form--light textarea:focus { border-color: #ff6247; box-shadow: 0 0 0 3px rgba(255, 98, 71, 0.15); }
+.dark .standalone-page { background: linear-gradient(135deg, #0b202a 0%, #0b171f 58%, #2a2520 100%); color: #f4f5ee; }
+.dark .standalone-header { border-bottom-color: rgba(198, 215, 219, 0.14); }
+.dark .standalone-brand { color: #f4f5ee; }
+.dark .standalone-back { color: #aab8bc; }
+.dark .standalone-back:hover { color: #ff9b8a; }
+.dark .standalone-hero h1, .dark .education-card h2, .dark .certificate-empty h2, .dark .certificate-card h2 { color: #f4f5ee; }
+.dark .standalone-hero > p:last-child, .dark .education-card__detail, .dark .certificate-empty > div:last-child > p:not(.standalone-kicker), .dark .certificate-card__issuer { color: #aab8bc; }
+.dark .education-card, .dark .certificate-card { border-color: rgba(198, 215, 219, 0.16); background: #10232d; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); }
+.dark .education-card__institution { color: #c7d3d5; }
+.dark .education-card__icon, .dark .certificate-empty__icon, .dark .certificate-summary { background: rgba(255, 98, 71, 0.1); }
+.dark .certificate-empty { border-color: rgba(198, 215, 219, 0.24); background: rgba(16, 35, 45, 0.72); }
+.dark .certificate-summary { border-color: rgba(255, 98, 71, 0.3); }
+.dark .certificate-summary span, .dark .certificate-card__actions a { color: #c7d3d5; }
+.dark .certificate-summary strong { color: #f4f5ee; }
+.dark .certificate-card__actions a { border-color: rgba(198, 215, 219, 0.18); }
+.dark .certificate-card__actions a:hover { border-color: #ff6247; color: #ff9b8a; }
+.dark .assistant-widget-popover { border-color: rgba(198, 215, 219, 0.2); background: #0b1b23; color: #f4f5ee; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45); }
+.dark .assistant-widget-popover .assistant-panel__header, .dark .assistant-input-row { border-color: rgba(198, 215, 219, 0.16); }
+.dark .assistant-widget__intro strong, .dark .assistant-empty p { color: #f4f5ee; }
+.dark .assistant-widget__intro small, .dark .assistant-empty small, .dark .assistant-thinking { color: #aab8bc; }
+.dark .assistant-empty { background: #10232d; color: #aab8bc; }
+.dark .assistant-message--user { background: rgba(255, 98, 71, 0.12); color: #f4f5ee; }
+.dark .assistant-message--assistant { background: rgba(198, 215, 219, 0.06); border-color: rgba(198, 215, 219, 0.14); color: #d4dddf; }
+.dark .assistant-input-row input { border-color: rgba(198, 215, 219, 0.2); background: #10232d; color: #f4f5ee; }
+.dark .assistant-reset, .dark .assistant-widget-popover .assistant-panel__header button { color: #aab8bc; }
+.dark .assistant-widget__suggestions button { color: #aab8bc; }
+.dark .assistant-widget__suggestions button:hover, .dark .assistant-reset:hover { color: #ff9b8a; }

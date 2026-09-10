@@ -98,5 +98,8 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Change the contact form heading to “Contact me” and use exactly Name, Email, and Message fields.
 - [x] Validate the corrected Formspree form on desktop and mobile, then save a checkpoint.
 - [x] Save a new checkpoint after the corrected Contact me heading and exact Name, Email, and Message fields are validated.
+- [x] Fix Light Mode and Dark Mode so the theme toggle applies complete page styling and persists correctly.
+- [x] Validate theme switching and persistence on desktop and mobile, then save a checkpoint.
+- [ ] Save a new checkpoint after verifying two-way theme switching, reload persistence, and responsive dark-mode styling.
 - [x] Save a checkpoint for the clarified project descriptions.
 - [x] Save a new checkpoint after explicit AI assistant contrast validation.
