@@ -103,12 +103,15 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Save a new checkpoint after verifying two-way theme switching, reload persistence, and responsive dark-mode styling.
 - [x] Capture explicit desktop and mobile screenshots with Dark Mode active for Home, Education, and Certificates.
 - [x] Re-verify the floating assistant, contact form, cards, and navigation in Dark Mode on desktop and mobile, then save a final checkpoint.
-- [ ] Save a final checkpoint after explicit dark desktop/mobile screenshots and key-surface verification.
+- [x] Save a final checkpoint after explicit dark desktop/mobile screenshots and key-surface verification.
 - [x] Capture the floating assistant opened on Education and Certificates in Dark Mode at desktop and mobile sizes.
-- [ ] Save a final checkpoint after the cross-route assistant fix and explicit opened-widget verification.
+- [x] Save a final checkpoint after the cross-route assistant fix and explicit opened-widget verification.
 - [x] Ensure the floating AI assistant is available on Education and Certificates routes as intended.
 - [x] Re-verify assistant availability and dark styling across every route, then save the final checkpoint.
-- [ ] Save the final checkpoint after explicit dark screenshots and cross-route assistant verification.
+- [x] Save a new checkpoint after explicit dark screenshots and cross-route assistant verification.
+- [x] Verify the local Git repository and selected GitHub target Thenjiwembi/Portfolio.
+- [ ] Commit and push the current portfolio project to GitHub.
+- [ ] Verify the pushed branch and commit, then record the GitHub result.
 - [x] Capture explicit opened-assistant Dark Mode evidence on every route before the final checkpoint.
 - [x] Save a checkpoint for the clarified project descriptions.
 - [x] Save a new checkpoint after explicit AI assistant contrast validation.
