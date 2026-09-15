@@ -110,8 +110,8 @@ System note: the project remains full-stack-capable after the scaffold sync; no 
 - [x] Re-verify assistant availability and dark styling across every route, then save the final checkpoint.
 - [x] Save a new checkpoint after explicit dark screenshots and cross-route assistant verification.
 - [x] Verify the local Git repository and selected GitHub target Thenjiwembi/Portfolio.
-- [ ] Commit and push the current portfolio project to GitHub.
-- [ ] Verify the pushed branch and commit, then record the GitHub result.
+- [x] Commit and push the current portfolio project to GitHub.
+- [x] Verify the pushed branch and commit, then record the GitHub result.
 - [x] Capture explicit opened-assistant Dark Mode evidence on every route before the final checkpoint.
 - [x] Save a checkpoint for the clarified project descriptions.
 - [x] Save a new checkpoint after explicit AI assistant contrast validation.
